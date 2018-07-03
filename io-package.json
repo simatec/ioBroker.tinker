@@ -1,0 +1,198 @@
+{
+    "common": {
+        "name":                     "opi",
+        "title":                    "OPi-Monitor",
+        "titleLang": {
+                "en": "OPi-monitoring",
+                "de": "OPi-Monitor",
+                "ru": "OPI-мониторинг",
+                "pt": "OPi-monitoramento",
+                "nl": "OPi-bewaking",
+                "fr": "OPi-monitoring",
+                "it": "OPI monitoraggio",
+                "es": "OPi-monitoreo",
+                "pl": "Monitorowanie OPi"
+        },
+        "desc":                     {
+                "en": "OPi-Monitor for ioBroker",
+                "de": "OPi-Monitor für ioBroker",
+                "ru": "OPI-монитор для ioBroker",
+                "pt": "OPi-Monitor para ioBroker",
+                "nl": "OPi-Monitor voor ioBroker",
+                "fr": "OPi-Monitor pour ioBroker",
+                "it": "OPi-Monitor per ioBroker",
+                "es": "OPi-Monitor para ioBroker",
+                "pl": "OPi-Monitor dla ioBroker"
+        },
+        "version":                  "0.1.1",
+        "news": {
+            "0.1.1": {
+                "en": "update index_m.html",
+                "de": "Aktualisieren Sie index_m.html",
+                "ru": "Обновить index_m.html",
+                "pt": "atualização index_m.html",
+                "nl": "update index_m.html",
+                "fr": "mettre à jour index_m.html",
+                "it": "aggiorna index_m.html",
+                "es": "actualizar index_m.html",
+                "pl": "aktualizować index_m.html"
+            },
+            "0.1.0": {
+                "en": "admin3 support",
+                "de": "Admin3-Unterstützung",
+                "ru": "Поддержка admin3",
+                "pt": "suporte admin3",
+                "nl": "admin3 ondersteuning",
+                "fr": "support admin3",
+                "it": "supporto per admin3",
+                "es": "soporte de admin3",
+                "pl": "wsparcie dla administratora3"
+            },
+            "0.0.1": {
+                "en": "initialrelease",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie"
+            }
+        },
+        "mode":                     "daemon",
+        "platform":                 "javascript/Node.js",
+        "os":                       ["linux"],
+        "loglevel":                 "info",
+        "keywords":                 ["ioBroker", "monitoring", "orangepi"],
+        "main":                     "main.js",
+        "authors": [
+            "Christian Baumgartner", "husky-koglhof <husky.koglhof@icloud.com>",
+		"Johnny Schneider", "Johann Schneider <johann.schneider1@googlemail.com>"
+        ],
+        "license":                  "MIT",
+        "singletonHost":             true,
+        "readme":                   "https://github.com/PrinzEisenherz1/ioBroker.opi/blob/master/README.md",
+        "icon":                     "opi.png",
+        "materialize":              true,
+        "type":                     "hardware",
+        "enabled":                  true,
+        "extIcon":                  "https://raw.githubusercontent.com/PrinzEisenherz1/ioBroker.opi/master/admin/opi.png"
+    },
+    "native": {
+        "c_cpu": true,
+        "c_memory": true,
+        "c_network": true,
+        "c_emmc": true,
+        "c_swap": true,
+        "c_temperature": true,
+        "c_uptime": true,
+        "c_wlan": false,
+        "interval": 60000,
+        "cpu": {
+            "cpu_frequency": {
+                "command": "cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq",
+                "regexp": "(.*)",
+                "post": "$1/1000"
+            },
+            "load1,load5,load15": {
+                "command": "cat /proc/loadavg",
+                "regexp": "^(\\S+)\\s(\\S+)\\s(\\S+)",
+                "post": ""
+            },
+            "scaling_governor": {
+                "command": "cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor",
+                "regexp": "(.*)",
+                "post": ""
+            }
+        },
+        "memory": {
+            "memory_total": {
+                "command": "cat /proc/meminfo",
+                "regexp": "MemTotal:\\s+(\\d+)",
+                "post": "$1/1024"
+            },
+            "memory_free": {
+                "command": "cat /proc/meminfo",
+                "regexp": "MemFree:\\s+(\\d+)",
+                "post": "$1/1024"
+            },
+            "memory_available": {
+                "command": "/usr/bin/free -mk",
+                "regexp": "^-\\/\\+ buffers\\/cache:\\s+\\d+\\s+(\\d+)",
+                "post": "$1/1024",
+                "multiline": true
+            }
+        },
+        "network": {
+            "net_received": {
+                "command": "cat /sys/class/net/eth0/statistics/rx_bytes",
+                "regexp": "(.*)",
+                "post": "$1*-1"
+            },
+            "net_send": {
+                "command": "cat /sys/class/net/eth0/statistics/tx_bytes",
+                "regexp": "(.*)",
+                "post": ""
+            }
+        },
+        "emmc": {
+            "emmc_root_total": {
+                "command": "df -k /",
+                "regexp": "\\S+\\s+(\\d+).*\\/$",
+                "post": "$1/1024",
+                "multiline": true
+            },
+            "emmc_root_used": {
+                "command": "df -k /",
+                "regexp": "\\S+\\s+\\d+\\s+(\\d+).*\\/$",
+                "post": "$1/1024",
+                "multiline": true
+            }
+        },
+        "swap": {
+            "swap_total": {
+                "command": "cat /proc/meminfo",
+                "regexp": "SwapTotal:\\s+(\\d+)",
+                "post": "$1/1024",
+                "multiline": true
+            },
+            "swap_used": {
+                "command": "cat /proc/meminfo",
+                "regexp": "SwapFree:\\s+(\\d+)",
+                "post": "(opi.swap_total - $1)/1024",
+                "multiline": true
+            }
+        },
+        "temperature": {
+            "soc_temp": {
+                "command": "cat /sys/devices/virtual/thermal/thermal_zone0/temp",
+                "regexp": "(.*)",
+                "post": "$1"
+            }
+        },
+        "uptime": {
+            "uptime": {
+                "command": "cat /proc/uptime",
+                "regexp": "(^\\S+)",
+                "post": ""
+            }
+        },
+        "wlan": {
+            "wifi_received": {
+                "command": "cat /sys/class/net/wlan0/statistics/rx_bytes",
+                "regexp": "(.*)",
+                "post": "$1*-1"
+            },
+            "wifi_send": {
+                "command": "cat /sys/class/net/wlan0/statistics/tx_bytes",
+                "regexp": "(.*)",
+                "post": ""
+            }
+        }
+    },
+    "objects": [
+    ],
+    "instanceObjects": [
+    ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "iobroker.opi",
+  "description": "OPI-Monitor for ioBroker Installations",
+  "version": "0.1.1",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "author": {
+    "name": "husky-koglhof",
+    "email": "husky.koglhof@icloud.com"
+  },
+  "contributors": [
+    "versteckt <johann.schneider1@googlemail.com>"
+  ],
+  "dependencies": {
+    "sync-exec": "^0.6.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^4.1.0",
+    "chai": "^4.1.2"
+  },
+  "homepage": "https://github.com/PrinzEisenherz1/ioBroker.opi",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "monitoring",
+    "orangepi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrinzEisenherz1/ioBroker.opi"
+  },
+  "os": [
+    "linux"
+  ],
+  "bugs": {
+    "url": "https://github.com/PrinzEisenherz1/ioBroker.opi/issues"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha"
+  },
+  "readmeFilename": "README.md"
+}
