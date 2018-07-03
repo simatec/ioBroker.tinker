@@ -2,7 +2,8 @@ UPC
 Memoria
 Red
 Intercambiar
-Configuración del adaptador Tinker Board Monitor
+ConfiguraciÃ³n del adaptador Tinker Board Monitor
 Temperatura
 Tiempo de actividad
 WLAN
+Tarjeta SD

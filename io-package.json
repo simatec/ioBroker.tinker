@@ -24,8 +24,19 @@
                 "es": "Tinker Board-Monitor para ioBroker",
                 "pl": "Tinker Board-Monitor dla ioBroker"
         },
-        "version":                  "0.0.1",
+        "version":                  "0.1.0",
         "news": {
+            "0.1.0": {
+    		"en": "First Beta Version",
+    		"de": "Erste Beta-Version",
+    		"ru": "Первая бета-версия",
+    		"pt": "Primeira versão beta",
+    		"nl": "Eerste bètaversie",
+    		"fr": "Première version bêta",
+    		"it": "Prima versione beta",
+    		"es": "Primera versión Beta",
+    		"pl": "Pierwsza wersja beta"
+            },        
             "0.0.1": {
                 "en": "initialrelease",
                 "de": "Erstveröffentlichung",
@@ -60,7 +71,7 @@
         "c_cpu": true,
         "c_memory": true,
         "c_network": true,
-        "c_emmc": true,
+        "c_sdcard": true,
         "c_swap": true,
         "c_temperature": true,
         "c_uptime": true,
@@ -95,10 +106,10 @@
                 "post": "$1/1024"
             },
             "memory_available": {
-                "command": "/usr/bin/free -mk",
-                "regexp": "^-\\/\\+ buffers\\/cache:\\s+\\d+\\s+(\\d+)",
-                "post": "$1/1024",
-                "multiline": true
+	        "command": "cat /proc/meminfo",
+	        "regexp": "MemAvailable:\\s+(\\d+)",
+	        "post": "$1/1024",
+	        "multiline": true
             }
         },
         "network": {
@@ -113,15 +124,15 @@
                 "post": ""
             }
         },
-        "emmc": {
-            "emmc_root_total": {
-                "command": "df -k /",
+        "sdcard": {
+            "sdcard_root_total": {
+                "command": "df /",
                 "regexp": "\\S+\\s+(\\d+).*\\/$",
                 "post": "$1/1024",
                 "multiline": true
             },
-            "emmc_root_used": {
-                "command": "df -k /",
+            "sdcard_root_used": {
+                "command": "df /",
                 "regexp": "\\S+\\s+\\d+\\s+(\\d+).*\\/$",
                 "post": "$1/1024",
                 "multiline": true
@@ -145,7 +156,7 @@
             "soc_temp": {
                 "command": "cat /sys/devices/virtual/thermal/thermal_zone0/temp",
                 "regexp": "(.*)",
-                "post": "$1"
+                "post": "$1/1000"
             }
         },
         "uptime": {

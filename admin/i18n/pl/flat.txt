@@ -6,3 +6,4 @@ Ustawienia adaptera Tinker Board-Monitor
 Temperatura
 Czas pracy
 WLAN
+Karta SD

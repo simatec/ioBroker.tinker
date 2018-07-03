@@ -6,3 +6,4 @@ Paramètres de l'adaptateur Tinker Board-Monitor
 Température
 Uptime
 WLAN
+Carte SD

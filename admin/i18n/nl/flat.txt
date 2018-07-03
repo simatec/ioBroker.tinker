@@ -6,3 +6,4 @@ Tinker Board-Monitor Adapterinstellingen
 Temperatuur
 Uptime
 WLAN
+SD-kaart
