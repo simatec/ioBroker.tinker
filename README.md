@@ -1,3 +1,3 @@
-![Logo](admin/opi.png)
+![Logo](admin/tinker.png)
 # ioBroker.tinker
 ===================
