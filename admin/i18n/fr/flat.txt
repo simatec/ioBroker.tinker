@@ -1,0 +1,8 @@
+CPU
+Mémoire
+Réseau
+Échanger
+Paramètres de l'adaptateur Tinker Board-Monitor
+Température
+Uptime
+WLAN

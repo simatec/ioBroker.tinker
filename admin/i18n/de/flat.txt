@@ -1,0 +1,8 @@
+CPU
+Speicher
+Netzwerk
+Swap
+Tinker-Board-Monitor Adapter Einstellungen
+Temperatur
+Uptime
+WLAN

@@ -1,16 +1,15 @@
 {
-  "name": "iobroker.opi",
-  "description": "OPI-Monitor for ioBroker Installations",
-  "version": "0.1.1",
+  "name": "iobroker.tinker",
+  "description": "Tinker Board-Monitor for ioBroker Installations",
+  "version": "0.0.1",
   "engines": {
     "node": ">=0.12"
   },
   "author": {
-    "name": "husky-koglhof",
-    "email": "husky.koglhof@icloud.com"
+    "name": "simatec",
+    "email": "nais@gmx.net"
   },
   "contributors": [
-    "versteckt <johann.schneider1@googlemail.com>"
   ],
   "dependencies": {
     "sync-exec": "^0.6.2"
@@ -20,22 +19,22 @@
     "mocha": "^4.1.0",
     "chai": "^4.1.2"
   },
-  "homepage": "https://github.com/PrinzEisenherz1/ioBroker.opi",
+  "homepage": "https://github.com/simatec/ioBroker.tinker",
   "license": "MIT",
   "keywords": [
     "ioBroker",
     "monitoring",
-    "orangepi"
+    "Tinker Board"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/PrinzEisenherz1/ioBroker.opi"
+    "url": "https://github.com/simatec/ioBroker.tinker"
   },
   "os": [
     "linux"
   ],
   "bugs": {
-    "url": "https://github.com/PrinzEisenherz1/ioBroker.opi/issues"
+    "url": "https://github.com/simatec/ioBroker.tinker/issues"
   },
   "main": "main.js",
   "scripts": {

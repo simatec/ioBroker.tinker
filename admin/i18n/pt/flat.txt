@@ -1,0 +1,8 @@
+CPU
+Memória
+Rede
+Troca
+Configurações do adaptador Tinker Board-Monitor
+Temperatura
+Tempo de atividade
+WLAN

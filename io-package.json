@@ -1,53 +1,31 @@
 {
     "common": {
-        "name":                     "opi",
-        "title":                    "OPi-Monitor",
+        "name":                     "tinker",
+        "title":                    "Tinker-Board-Monitor",
         "titleLang": {
-                "en": "OPi-monitoring",
-                "de": "OPi-Monitor",
-                "ru": "OPI-мониторинг",
-                "pt": "OPi-monitoramento",
-                "nl": "OPi-bewaking",
-                "fr": "OPi-monitoring",
-                "it": "OPI monitoraggio",
-                "es": "OPi-monitoreo",
-                "pl": "Monitorowanie OPi"
+                "en": "Tinker Board-monitoring",
+                "de": "Tinker Board-Monitor",
+                "ru": "Tinker Board-мониторинг",
+                "pt": "Tinker Board-monitoramento",
+                "nl": "Tinker Board-bewaking",
+                "fr": "Tinker Board-monitoring",
+                "it": "Tinker Board monitoraggio",
+                "es": "Tinker Board-monitoreo",
+                "pl": "Monitorowanie Tinker Board"
         },
         "desc":                     {
-                "en": "OPi-Monitor for ioBroker",
-                "de": "OPi-Monitor für ioBroker",
-                "ru": "OPI-монитор для ioBroker",
-                "pt": "OPi-Monitor para ioBroker",
-                "nl": "OPi-Monitor voor ioBroker",
-                "fr": "OPi-Monitor pour ioBroker",
-                "it": "OPi-Monitor per ioBroker",
-                "es": "OPi-Monitor para ioBroker",
-                "pl": "OPi-Monitor dla ioBroker"
+                "en": "Tinker Board-Monitor for ioBroker",
+                "de": "Tinker Board-Monitor für ioBroker",
+                "ru": "Tinker Board-монитор для ioBroker",
+                "pt": "Tinker Board-Monitor para ioBroker",
+                "nl": "Tinker Board-Monitor voor ioBroker",
+                "fr": "Tinker Board-Monitor pour ioBroker",
+                "it": "Tinker Board-Monitor per ioBroker",
+                "es": "Tinker Board-Monitor para ioBroker",
+                "pl": "Tinker Board-Monitor dla ioBroker"
         },
-        "version":                  "0.1.1",
+        "version":                  "0.0.1",
         "news": {
-            "0.1.1": {
-                "en": "update index_m.html",
-                "de": "Aktualisieren Sie index_m.html",
-                "ru": "Обновить index_m.html",
-                "pt": "atualização index_m.html",
-                "nl": "update index_m.html",
-                "fr": "mettre à jour index_m.html",
-                "it": "aggiorna index_m.html",
-                "es": "actualizar index_m.html",
-                "pl": "aktualizować index_m.html"
-            },
-            "0.1.0": {
-                "en": "admin3 support",
-                "de": "Admin3-Unterstützung",
-                "ru": "Поддержка admin3",
-                "pt": "suporte admin3",
-                "nl": "admin3 ondersteuning",
-                "fr": "support admin3",
-                "it": "supporto per admin3",
-                "es": "soporte de admin3",
-                "pl": "wsparcie dla administratora3"
-            },
             "0.0.1": {
                 "en": "initialrelease",
                 "de": "Erstveröffentlichung",
@@ -64,20 +42,19 @@
         "platform":                 "javascript/Node.js",
         "os":                       ["linux"],
         "loglevel":                 "info",
-        "keywords":                 ["ioBroker", "monitoring", "orangepi"],
+        "keywords":                 ["ioBroker", "monitoring", "tinker board"],
         "main":                     "main.js",
         "authors": [
-            "Christian Baumgartner", "husky-koglhof <husky.koglhof@icloud.com>",
-		"Johnny Schneider", "Johann Schneider <johann.schneider1@googlemail.com>"
+            "simatec", "husky-koglhof <nais@gmx.net>"
         ],
         "license":                  "MIT",
         "singletonHost":             true,
-        "readme":                   "https://github.com/PrinzEisenherz1/ioBroker.opi/blob/master/README.md",
-        "icon":                     "opi.png",
+        "readme":                   "https://github.com/simatec/ioBroker.tinker/blob/master/README.md",
+        "icon":                     "tinker.png",
         "materialize":              true,
         "type":                     "hardware",
         "enabled":                  true,
-        "extIcon":                  "https://raw.githubusercontent.com/PrinzEisenherz1/ioBroker.opi/master/admin/opi.png"
+        "extIcon":                  "https://raw.githubusercontent.com/simatec/ioBroker.tinker/master/admin/tinker.png"
     },
     "native": {
         "c_cpu": true,
@@ -160,7 +137,7 @@
             "swap_used": {
                 "command": "cat /proc/meminfo",
                 "regexp": "SwapFree:\\s+(\\d+)",
-                "post": "(opi.swap_total - $1)/1024",
+                "post": "(tinker.swap_total - $1)/1024",
                 "multiline": true
             }
         },

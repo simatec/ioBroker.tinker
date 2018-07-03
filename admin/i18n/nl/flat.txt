@@ -1,0 +1,8 @@
+CPU
+Geheugen
+Netwerk
+ruil
+Tinker Board-Monitor Adapterinstellingen
+Temperatuur
+Uptime
+WLAN

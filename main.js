@@ -1,15 +1,15 @@
 /**
- *      OPI-Monitor Adapter
+ *      Tinker Board-Monitor Adapter
  *
  *      License: MIT
  */
 
 var utils   = require(__dirname + '/lib/utils'); // Get common adapter utils
-							 
-										
+
+
 
 var adapter = utils.adapter({
-    name: 'opi',
+    name: 'tinker',
 
     ready: function () {
         if (adapter.config.forceinit) {
@@ -31,7 +31,7 @@ var adapter = utils.adapter({
                 }
             });
         }
-									  
+
         adapter.subscribeStates('*');
 
         adapter.objects.getObjectList({include_docs: true}, function (err, res) {
@@ -45,32 +45,32 @@ var adapter = utils.adapter({
             main();
         });
     },
-									  
-																							 
-	  
+
+
+
     stateChange: function (id, state) {
         adapter.log.debug('stateChange for ' + id + ' found state = ' + JSON.stringify(state));
-								  
-											 
-										  
-											
-												  
-			 
-		 
+
+
+
+
+
+
+
     },
     unload: function (callback) {
-				   
-									  
+
+
         callback();
     }
 });
 
 
 var objects;
-				 
-				 
+
+
 var exec;
-var opi      = {};
+var tinker      = {};
 var table    = {};
 var config   = adapter.config;
 var oldstyle = false;
@@ -135,7 +135,7 @@ function parser() {
                     adapter.log.debug(er.stack);
                     if (er.pid) console.log('%s (pid: %d) exited with status %d',
                         er.file, er.pid, er.status);
-                    // do not process if exec fails 
+                    // do not process if exec fails
                     continue;
                 }
 
@@ -154,7 +154,7 @@ function parser() {
                         adapter.log.debug('MATCHING: ' + value);
                         adapter.log.debug('NAME: ' + name + ', VALULE: ' + value);
 
-                        opi[name] = value;
+                        tinker[name] = value;
                         table[c][i] = value;
                     }
                 } else {
@@ -165,7 +165,7 @@ function parser() {
                     } else {
                         value = stdout;
                     }
-                    opi[i] = value;
+                    tinker[i] = value;
                     table[c][i] = value;
                 }
             }
@@ -206,9 +206,9 @@ function parser() {
                 if (lname !== undefined && lname.length > 1) {
                     for (var m = 0; m < lname.length; m++) {
                         var name = lname[m];
-                        value = opi[name];
-															   
-																				
+                        value = tinker[name];
+
+
 
                         // TODO: Check if value is number and format it 2 Digits
                         if (!isNaN(value)) {
@@ -246,7 +246,7 @@ function parser() {
                         });
                     }
                 } else {
-                    value = opi[i];
+                    value = tinker[i];
                     if (value !== undefined && value !== '' && value !== null) {
                         if (post.indexOf('$1') !== -1) {
                             adapter.log.debug('VALUE: ' + value + ' POST: ' + post);
