@@ -3,28 +3,28 @@
         "name":                     "tinker",
         "title":                    "Tinker-Board-Monitor",
         "titleLang": {
-                "en": "Tinker Board-monitoring",
-                "de": "Tinker Board-Monitor",
-                "ru": "Tinker Board-мониторинг",
-                "pt": "Tinker Board-monitoramento",
-                "nl": "Tinker Board-bewaking",
-                "fr": "Tinker Board-monitoring",
-                "it": "Tinker Board monitoraggio",
-                "es": "Tinker Board-monitoreo",
-                "pl": "Monitorowanie Tinker Board"
+   		"en": "Tinker Board-monitoring",
+    		"de": "Tinker Board-Mointor",
+    		"ru": "Мониторинг Tinker Board",
+    		"pt": "Tinker Board-monitoring",
+    		"nl": "Tinker Board-monitoring",
+    		"fr": "Tinker Board-surveillance",
+    		"it": "Monitoraggio della scheda Tinker",
+    		"es": "Tinker Board-monitoring",
+    		"pl": "Monitorowanie płyt Tinker"
         },
-        "desc":                     {
-                "en": "Tinker Board-Monitor for ioBroker",
-                "de": "Tinker Board-Monitor für ioBroker",
-                "ru": "Tinker Board-монитор для ioBroker",
-                "pt": "Tinker Board-Monitor para ioBroker",
-                "nl": "Tinker Board-Monitor voor ioBroker",
-                "fr": "Tinker Board-Monitor pour ioBroker",
-                "it": "Tinker Board-Monitor per ioBroker",
-                "es": "Tinker Board-Monitor para ioBroker",
-                "pl": "Tinker Board-Monitor dla ioBroker"
+        "desc": {
+     		"en": "Tinker Board-Monitor for ioBroker",
+     		"de": "Tinker Board-Monitor für ioBroker",
+     		"ru": "Tinker Board-Monitor для ioBroker",
+     		"pt": "Tinker Board-Monitor para ioBroker",
+     		"nl": "Tinker Board-Monitor voor ioBroker",
+     		"fr": "Tinker Board-Monitor pour ioBroker",
+     		"it": "Tinker Board-Monitor per ioBroker",
+     		"es": "Tinker Board-Monitor para ioBroker",
+    		"pl": "Tinker Board-Monitor dla ioBroker"
         },
-        "version":                  "0.1.0",
+        "version": "0.1.0",
         "news": {
             "0.1.0": {
     		"en": "First Beta Version",
@@ -38,15 +38,15 @@
     		"pl": "Pierwsza wersja beta"
             },        
             "0.0.1": {
-                "en": "initialrelease",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie"
+    		"en": "initial Version",
+    		"de": "erste Version",
+    		"ru": "Первоначальная версия",
+    		"pt": "versão inicial",
+    		"nl": "eerste versie",
+    		"fr": "version initiale",
+    		"it": "versione iniziale",
+    		"es": "versión inicial",
+    		"pl": "początkowa wersja"
             }
         },
         "mode":                     "daemon",
@@ -56,7 +56,7 @@
         "keywords":                 ["ioBroker", "monitoring", "tinker board"],
         "main":                     "main.js",
         "authors": [
-            "simatec", "husky-koglhof <nais@gmx.net>"
+            "simatec <nais@gmx.net>"
         ],
         "license":                  "MIT",
         "singletonHost":             true,
