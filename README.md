@@ -62,15 +62,18 @@ On configuration page you can select following modules:
 - WLAN
 
 ### Changelog
+
 ## 0.1.0 (2018-07-03)
 - First Beta
 
 ## 0.0.1 (2018-07-03)
 - initial Version
 
+### License
+
 The MIT License (MIT)
 
-Copyright (c) 2014-2016 simatec
+Copyright (c) 2018 simatec <nais@gmx.net>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
