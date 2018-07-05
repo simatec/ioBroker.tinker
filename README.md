@@ -64,10 +64,11 @@ On configuration page you can select following modules:
 ### Changelog
 
 ## 0.1.0 (2018-07-03)
-- First Beta
+* First Beta
 
 ## 0.0.1 (2018-07-03)
-- initial Version
+* initial Version
+
 
 ### License
 
