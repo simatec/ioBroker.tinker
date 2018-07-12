@@ -24,8 +24,19 @@
      		"es": "Tinker Board-Monitor para ioBroker",
     		"pl": "Tinker Board-Monitor dla ioBroker"
         },
-        "version": "0.1.0",
+        "version": "0.1.1",
         "news": {
+			"0.1.1": {
+    		"en": "Beta Version",
+    		"de": "Beta-Version",
+    		"ru": "бета-версия",
+    		"pt": "versão beta",
+    		"nl": "bètaversie",
+    		"fr": "version bêta",
+    		"it": "versione beta",
+    		"es": "versión Beta",
+    		"pl": "wersja beta"
+            },
             "0.1.0": {
     		"en": "First Beta Version",
     		"de": "Erste Beta-Version",
@@ -36,7 +47,7 @@
     		"it": "Prima versione beta",
     		"es": "Primera versión Beta",
     		"pl": "Pierwsza wersja beta"
-            },        
+            },
             "0.0.1": {
     		"en": "initial Version",
     		"de": "erste Version",
