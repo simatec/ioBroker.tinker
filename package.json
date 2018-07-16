@@ -1,7 +1,7 @@
 {
   "name": "iobroker.tinker",
   "description": "Tinker Board-Monitor for ioBroker Installations",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "engines": {
     "node": ">=0.12"
   },
@@ -9,8 +9,7 @@
     "name": "simatec",
     "email": "nais@gmx.net"
   },
-  "contributors": [
-  ],
+  "contributors": [],
   "dependencies": {
     "sync-exec": "^0.6.2"
   },

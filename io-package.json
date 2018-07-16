@@ -24,8 +24,19 @@
      		"es": "Tinker Board-Monitor para ioBroker",
     		"pl": "Tinker Board-Monitor dla ioBroker"
         },
-        "version": "0.1.1",
+        "version": "0.1.2",
         "news": {
+            "0.1.2": {
+    		"en": "Bug Fix",
+            "de": "Bug-Fix",
+            "ru": "Исправлена ​​ошибка",
+            "pt": "Correção de Bug",
+            "nl": "Bug Fix",
+            "fr": "Correction d'un bug",
+            "it": "Risoluzione del problema",
+            "es": "Arreglo del fallo",
+            "pl": "Naprawa błędów"
+            },
 			"0.1.1": {
     		"en": "Beta Version",
     		"de": "Beta-Version",
