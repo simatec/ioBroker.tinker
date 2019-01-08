@@ -63,6 +63,9 @@ On configuration page you can select following modules:
 
 ## Changelog
 
+### 0.1.1 (2019-01-08)
+* Fix for new iobroker Installer
+
 ### 0.1.0 (2018-07-03)
 * First Beta
 
