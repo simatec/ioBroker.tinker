@@ -63,6 +63,9 @@ On configuration page you can select following modules:
 
 ## Changelog
 
+### 0.1.3 (2019-03-14)
+* (simatec) Ready for latest
+
 ### 0.1.1 (2019-01-08)
 * Fix for new iobroker Installer
 
