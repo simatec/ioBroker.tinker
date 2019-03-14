@@ -2,7 +2,7 @@
 # ioBroker.tinker
 ===================
 
-[![NPM version](http://img.shields.io/npm/v/iobroker.tinker.svg)](https://www.npmjs.com/package/iobroker.tinker)
+![Number of Installations](http://iobroker.live/badges/tinker-installed.svg) ![Number of Installations](http://iobroker.live/badges/tinker-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.tinker.svg)](https://www.npmjs.com/package/iobroker.tinker)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.tinker.svg)](https://www.npmjs.com/package/iobroker.tinker)
 
 [![NPM](https://nodei.co/npm/iobroker.tinker.png?downloads=true)](https://nodei.co/npm/iobroker.tinker/)
