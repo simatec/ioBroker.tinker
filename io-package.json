@@ -24,8 +24,19 @@
      		"es": "Tinker Board-Monitor para ioBroker",
     		"pl": "Tinker Board-Monitor dla ioBroker"
         },
-        "version": "0.1.2",
+        "version": "0.1.3",
         "news": {
+		"0.1.3": {
+			"en": "Ready for latest",
+		    "de": "Bereit für den neuesten Stand",
+		    "ru": "Готов к последним",
+		    "pt": "Pronto para mais recente",
+		    "nl": "Klaar voor de nieuwste",
+		    "fr": "Prêt pour le dernier",
+		    "it": "Pronto per ultimo",
+		    "es": "Listo para el ultimo",
+		    "pl": "Gotowy na ostatni
+		    },
             "0.1.2": {
     		"en": "Bug Fix",
             "de": "Bug-Fix",
