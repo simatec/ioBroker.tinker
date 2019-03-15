@@ -24,8 +24,19 @@
      		"es": "Tinker Board-Monitor para ioBroker",
     		"pl": "Tinker Board-Monitor dla ioBroker"
         },
-        "version": "0.1.3",
+        "version": "0.1.4",
         "news": {
+		"0.1.4": {
+			"en": "Fix io-package.json",
+		    "de": "Fix io-package.json",
+		    "ru": "Исправить io-package.json",
+		    "pt": "Corrigir io-package.json",
+		    "nl": "Fix io-package.json",
+		    "fr": "Correction de io-package.json",
+		    "it": "Correggere io-package.json",
+		    "es": "Arreglar io-package.json",
+		    "pl": "Napraw plik io-package.json"
+		    },
 		"0.1.3": {
 			"en": "Ready for latest",
 		    "de": "Bereit für den neuesten Stand",
@@ -35,7 +46,7 @@
 		    "fr": "Prêt pour le dernier",
 		    "it": "Pronto per ultimo",
 		    "es": "Listo para el ultimo",
-		    "pl": "Gotowy na ostatni
+		    "pl": "Gotowy na ostatni"
 		    },
             "0.1.2": {
     		"en": "Bug Fix",
