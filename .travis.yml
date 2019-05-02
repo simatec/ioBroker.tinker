@@ -1,10 +1,12 @@
 os:
   - linux
+  - windows
 language: node_js
 node_js:
   - '6'
   - '8'
   - '10'
+  - '12'
 before_install:
   - 'if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export CXX=g++-4.9; fi'
 before_script:
