@@ -1,9 +1,9 @@
 {
   "name": "iobroker.tinker",
   "description": "Tinker Board-Monitor for ioBroker Installations",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "engines": {
-    "node": ">=0.12"
+    "node": ">=8.0.0"
   },
   "author": {
     "name": "simatec",
@@ -11,12 +11,14 @@
   },
   "contributors": [],
   "dependencies": {
-    "sync-exec": "^0.6.2"
+    "sync-exec": "^0.6.2",
+    "@iobroker/adapter-core": "^2.2.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "mocha": "^4.1.0",
-    "chai": "^4.1.2"
+    "gulp": "^4.0.2",
+    "mocha": "^7.0.1",
+    "chai": "^4.2.0",
+    "@iobroker/testing": "^2.0.2"
   },
   "homepage": "https://github.com/simatec/ioBroker.tinker",
   "license": "MIT",
@@ -37,7 +39,10 @@
   },
   "main": "main.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha"
+    "test": "npm run test:package && npm run test:unit",
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "test:integration": "mocha test/integration --exit"
   },
   "readmeFilename": "README.md"
 }

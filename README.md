@@ -63,6 +63,9 @@ On configuration page you can select following modules:
 
 ## Changelog
 
+### 1.0.0 (2020-04-07)
+(simatec) Release 1.0.0
+
 ### 0.1.1 (2019-01-08)
 * Fix for new iobroker Installer
 
@@ -78,7 +81,7 @@ On configuration page you can select following modules:
 
 The MIT License (MIT)
 
-Copyright (c) 2018 simatec <nais@gmx.net>
+Copyright (c) 2018 - 2020 simatec
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
