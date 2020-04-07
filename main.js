@@ -3,17 +3,25 @@
  *
  *      License: MIT
  */
+const utils = require('@iobroker/adapter-core'); // Get common adapter utils
+const adapterName = require('./package.json').name.split('.').pop();
+let adapter;
+let timer;
 
-var utils = require('@iobroker/adapter-core'); // Get common adapter utils
-
-
-
+/*
 var adapter = utils.adapter({
     name: 'tinker',
+    */
+function startAdapter(options) {
+    options = options || {};
+    Object.assign(options, { name: adapterName });
 
-    ready: function () {
+    adapter = new utils.Adapter(options);
+
+    //ready: function () {
+    adapter.on('ready', () => {
         if (adapter.config.forceinit) {
-            adapter.objects.getObjectList({startkey: adapter.name + '.' + adapter.instance, endkey: adapter.name + '.' + adapter.instance + '\u9999'}, function (err, res) {
+            adapter.objects.getObjectList({ startkey: adapter.name + '.' + adapter.instance, endkey: adapter.name + '.' + adapter.instance + '\u9999' }, function (err, res) {
                 res = res.rows;
                 for (var i = 0; i < res.length; i++) {
                     var id = res[i].doc.common.name;
@@ -31,63 +39,62 @@ var adapter = utils.adapter({
                 }
             });
         }
-
         adapter.subscribeStates('*');
 
-        adapter.objects.getObjectList({include_docs: true}, function (err, res) {
+        adapter.objects.getObjectList({ include_docs: true }, function (err, res) {
             res = res.rows;
             objects = {};
             for (var i = 0; i < res.length; i++) {
                 objects[res[i].doc._id] = res[i].doc;
             }
-
             adapter.log.debug('received all objects');
-            main();
+            main(adapter);
         });
-    },
-
-
-
-    stateChange: function (id, state) {
+        //},
+    });
+    //adapter.on('stateChange', (id, state) => {
+    adapter.on('stateChange', (id, state) => {
         adapter.log.debug('stateChange for ' + id + ' found state = ' + JSON.stringify(state));
-
-
-
-
-
-
-
-    },
-    unload: function (callback) {
-
-
-        callback();
-    }
-});
-
+        //},
+    });
+    //unload: function (callback) {
+    adapter.on('unload', (callback) => {
+        try {
+            adapter.log.info('cleaned everything up...');
+            clearInterval(timer);
+            callback();
+        } catch (e) {
+            callback();
+        }
+        //callback();
+        //}
+    });
+    //});
+    return adapter;
+}
 
 var objects;
 
 
 var exec;
-var tinker      = {};
-var table    = {};
-var config   = adapter.config;
+var tinker = {};
+var table = {};
+var config = adapter.config;
 var oldstyle = false;
 
-function main() {
+function main(adapter) {
     // TODO: Check which Objects we provide
-    setInterval(parser, adapter.config.interval || 60000);
+    timer = setInterval(parser, adapter.config.interval || 60000);
 
     var version = process.version;
     var va = version.split('.');
     if (va[0] === 'v0' && va[1] === '10') {
         adapter.log.debug('NODE Version = ' + version + ', we need new exec-sync');
-        exec     = require('sync-exec');
+        exec = require('sync-exec');
         oldstyle = true;
     } else {
         adapter.log.debug('NODE Version = ' + version + ', we need new execSync');
-        exec     = require('child_process').execSync;
+        exec = require('child_process').execSync;
     }
     parser();
 }
@@ -181,13 +188,13 @@ function parser() {
             if (objects[c] === undefined) {
                 var stateObj = {
                     common: {
-                        name:   c, // You can add here some description
-                        read:   true,
-                        write:  true,
-                        role:   'sensor'
+                        name: c, // You can add here some description
+                        read: true,
+                        write: true,
+                        role: 'sensor'
                     },
-                    type:   'device',
-                    _id:    c
+                    type: 'device',
+                    _id: c
                 };
 
                 adapter.extendObject(c, stateObj);
@@ -228,12 +235,12 @@ function parser() {
                             // TODO Create an Objecttree
                             var stateObj = {
                                 common: {
-                                    name:  objectName, // You can add here some description
-                                    read:  true,
+                                    name: objectName, // You can add here some description
+                                    read: true,
                                     write: true,
                                     state: 'state',
-                                    role:  'value',
-                                    type:  'number'
+                                    role: 'value',
+                                    type: 'number'
                                 },
                                 type: 'state',
                                 _id: objectName
@@ -272,12 +279,12 @@ function parser() {
                             // TODO Create an Objecttree
                             var stateObj = {
                                 common: {
-                                    name:  objectName, // You can add here some description
-                                    read:  true,
+                                    name: objectName, // You can add here some description
+                                    read: true,
                                     write: true,
                                     state: 'state',
-                                    role:  'value',
-                                    type:  'mixed'
+                                    role: 'value',
+                                    type: 'mixed'
                                 },
                                 type: 'state',
                                 _id: objectName
@@ -299,4 +306,12 @@ function parser() {
             }
         }
     }
+}
+
+// If started as allInOne/compact mode => return function to create instance
+if (module && module.parent) {
+    module.exports = startAdapter;
+} else {
+    // or start the instance directly
+    startAdapter();
 }
