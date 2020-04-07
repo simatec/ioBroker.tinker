@@ -47,29 +47,29 @@
                 "it": "Risoluzione del problema",
                 "es": "Arreglo del fallo",
                 "pl": "Naprawa błędów"
-            },
-            "titleLang": {
-                "en": "Tinker Board-monitoring",
-                "de": "Tinker Board-Mointor",
-                "ru": "Мониторинг Tinker Board",
-                "pt": "Tinker Board-monitoring",
-                "nl": "Tinker Board-monitoring",
-                "fr": "Tinker Board-surveillance",
-                "it": "Monitoraggio della scheda Tinker",
-                "es": "Tinker Board-monitoring",
-                "pl": "Monitorowanie płyt Tinker"
-            },
-            "desc": {
-                "en": "Tinker Board-Monitor for ioBroker",
-                "de": "Tinker Board-Monitor für ioBroker",
-                "ru": "Tinker Board-Monitor для ioBroker",
-                "pt": "Tinker Board-Monitor para ioBroker",
-                "nl": "Tinker Board-Monitor voor ioBroker",
-                "fr": "Tinker Board-Monitor pour ioBroker",
-                "it": "Tinker Board-Monitor per ioBroker",
-                "es": "Tinker Board-Monitor para ioBroker",
-                "pl": "Tinker Board-Monitor dla ioBroker"
             }
+        },
+        "titleLang": {
+            "en": "Tinker Board-monitoring",
+            "de": "Tinker Board-Mointor",
+            "ru": "Мониторинг Tinker Board",
+            "pt": "Tinker Board-monitoring",
+            "nl": "Tinker Board-monitoring",
+            "fr": "Tinker Board-surveillance",
+            "it": "Monitoraggio della scheda Tinker",
+            "es": "Tinker Board-monitoring",
+            "pl": "Monitorowanie płyt Tinker"
+        },
+        "desc": {
+            "en": "Tinker Board-Monitor for ioBroker",
+            "de": "Tinker Board-Monitor für ioBroker",
+            "ru": "Tinker Board-Monitor для ioBroker",
+            "pt": "Tinker Board-Monitor para ioBroker",
+            "nl": "Tinker Board-Monitor voor ioBroker",
+            "fr": "Tinker Board-Monitor pour ioBroker",
+            "it": "Tinker Board-Monitor per ioBroker",
+            "es": "Tinker Board-Monitor para ioBroker",
+            "pl": "Tinker Board-Monitor dla ioBroker"
         },
         "mode": "daemon",
         "platform": "javascript/Node.js",
