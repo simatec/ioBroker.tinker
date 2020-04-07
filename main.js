@@ -9,17 +9,12 @@ let adapter;
 let timer;
 let config;
 
-/*
-var adapter = utils.adapter({
-    name: 'tinker',
-    */
 function startAdapter(options) {
     options = options || {};
     Object.assign(options, { name: adapterName });
 
     adapter = new utils.Adapter(options);
 
-    //ready: function () {
     adapter.on('ready', () => {
         config = adapter.config;
         if (adapter.config.forceinit) {
@@ -52,14 +47,12 @@ function startAdapter(options) {
             adapter.log.debug('received all objects');
             main(adapter);
         });
-        //},
     });
-    //adapter.on('stateChange', (id, state) => {
+
     adapter.on('stateChange', (id, state) => {
         adapter.log.debug('stateChange for ' + id + ' found state = ' + JSON.stringify(state));
-        //},
     });
-    //unload: function (callback) {
+
     adapter.on('unload', (callback) => {
         try {
             adapter.log.info('cleaned everything up...');
@@ -68,20 +61,14 @@ function startAdapter(options) {
         } catch (e) {
             callback();
         }
-        //callback();
-        //}
     });
-    //});
     return adapter;
 }
 
 var objects;
-
-
 var exec;
 var tinker = {};
 var table = {};
-//var config = adapter.config;
 var oldstyle = false;
 
 function main(adapter) {
