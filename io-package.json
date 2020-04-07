@@ -1,7 +1,7 @@
 {
-    "version": "1.0.0",
     "common": {
         "name": "tinker",
+        "version": "1.0.0",
         "title": "Tinker-Board-Monitor",
         "news": {
             "1.0.0": {
