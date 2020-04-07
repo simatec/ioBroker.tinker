@@ -2,6 +2,7 @@
   "name": "iobroker.tinker",
   "description": "Tinker Board-Monitor for ioBroker Installations",
   "version": "1.0.0",
+
   "engines": {
     "node": ">=8.0.0"
   },

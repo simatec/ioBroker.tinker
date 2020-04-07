@@ -1,93 +1,99 @@
 {
+    "version": "1.0.0",
     "common": {
-        "name":                     "tinker",
-        "title":                    "Tinker-Board-Monitor",
-        "titleLang": {
-   		"en": "Tinker Board-monitoring",
-    		"de": "Tinker Board-Mointor",
-    		"ru": "Мониторинг Tinker Board",
-    		"pt": "Tinker Board-monitoring",
-    		"nl": "Tinker Board-monitoring",
-    		"fr": "Tinker Board-surveillance",
-    		"it": "Monitoraggio della scheda Tinker",
-    		"es": "Tinker Board-monitoring",
-    		"pl": "Monitorowanie płyt Tinker"
-        },
-        "desc": {
-     		"en": "Tinker Board-Monitor for ioBroker",
-     		"de": "Tinker Board-Monitor für ioBroker",
-     		"ru": "Tinker Board-Monitor для ioBroker",
-     		"pt": "Tinker Board-Monitor para ioBroker",
-     		"nl": "Tinker Board-Monitor voor ioBroker",
-     		"fr": "Tinker Board-Monitor pour ioBroker",
-     		"it": "Tinker Board-Monitor per ioBroker",
-     		"es": "Tinker Board-Monitor para ioBroker",
-    		"pl": "Tinker Board-Monitor dla ioBroker"
-        },
-        "version": "0.1.2",
+        "name": "tinker",
+        "title": "Tinker-Board-Monitor",
         "news": {
+            "1.0.0": {
+                "en": "Release 1.0.0",
+                "de": "Release 1.0.0",
+                "ru": "Выпуск 1.0.0",
+                "pt": "Release 1.0.0",
+                "nl": "Release 1.0.0",
+                "fr": "Version 1.0.0",
+                "it": "Versione 1.0.0",
+                "es": "Release 1.0.0",
+                "pl": "Wersja 1.0.0"
+            },
+            "0.1.4": {
+                "en": "Fix io-package.json",
+                "de": "Fix io-package.json",
+                "ru": "Исправить io-package.json",
+                "pt": "Corrigir io-package.json",
+                "nl": "Fix io-package.json",
+                "fr": "Correction de io-package.json",
+                "it": "Correggere io-package.json",
+                "es": "Arreglar io-package.json",
+                "pl": "Napraw plik io-package.json"
+            },
+            "0.1.3": {
+                "en": "Ready for latest",
+                "de": "Bereit für den neuesten Stand",
+                "ru": "Готов к последним",
+                "pt": "Pronto para mais recente",
+                "nl": "Klaar voor de nieuwste",
+                "fr": "Prêt pour le dernier",
+                "it": "Pronto per ultimo",
+                "es": "Listo para el ultimo",
+                "pl": "Gotowy na ostatni"
+            },
             "0.1.2": {
-    		"en": "Bug Fix",
-            "de": "Bug-Fix",
-            "ru": "Исправлена ​​ошибка",
-            "pt": "Correção de Bug",
-            "nl": "Bug Fix",
-            "fr": "Correction d'un bug",
-            "it": "Risoluzione del problema",
-            "es": "Arreglo del fallo",
-            "pl": "Naprawa błędów"
+                "en": "Bug Fix",
+                "de": "Bug-Fix",
+                "ru": "Исправлена ​​ошибка",
+                "pt": "Correção de Bug",
+                "nl": "Bug Fix",
+                "fr": "Correction d'un bug",
+                "it": "Risoluzione del problema",
+                "es": "Arreglo del fallo",
+                "pl": "Naprawa błędów"
             },
-			"0.1.1": {
-    		"en": "Beta Version",
-    		"de": "Beta-Version",
-    		"ru": "бета-версия",
-    		"pt": "versão beta",
-    		"nl": "bètaversie",
-    		"fr": "version bêta",
-    		"it": "versione beta",
-    		"es": "versión Beta",
-    		"pl": "wersja beta"
+            "titleLang": {
+                "en": "Tinker Board-monitoring",
+                "de": "Tinker Board-Mointor",
+                "ru": "Мониторинг Tinker Board",
+                "pt": "Tinker Board-monitoring",
+                "nl": "Tinker Board-monitoring",
+                "fr": "Tinker Board-surveillance",
+                "it": "Monitoraggio della scheda Tinker",
+                "es": "Tinker Board-monitoring",
+                "pl": "Monitorowanie płyt Tinker"
             },
-            "0.1.0": {
-    		"en": "First Beta Version",
-    		"de": "Erste Beta-Version",
-    		"ru": "Первая бета-версия",
-    		"pt": "Primeira versão beta",
-    		"nl": "Eerste bètaversie",
-    		"fr": "Première version bêta",
-    		"it": "Prima versione beta",
-    		"es": "Primera versión Beta",
-    		"pl": "Pierwsza wersja beta"
-            },
-            "0.0.1": {
-    		"en": "initial Version",
-    		"de": "erste Version",
-    		"ru": "Первоначальная версия",
-    		"pt": "versão inicial",
-    		"nl": "eerste versie",
-    		"fr": "version initiale",
-    		"it": "versione iniziale",
-    		"es": "versión inicial",
-    		"pl": "początkowa wersja"
+            "desc": {
+                "en": "Tinker Board-Monitor for ioBroker",
+                "de": "Tinker Board-Monitor für ioBroker",
+                "ru": "Tinker Board-Monitor для ioBroker",
+                "pt": "Tinker Board-Monitor para ioBroker",
+                "nl": "Tinker Board-Monitor voor ioBroker",
+                "fr": "Tinker Board-Monitor pour ioBroker",
+                "it": "Tinker Board-Monitor per ioBroker",
+                "es": "Tinker Board-Monitor para ioBroker",
+                "pl": "Tinker Board-Monitor dla ioBroker"
             }
         },
-        "mode":                     "daemon",
-        "platform":                 "javascript/Node.js",
-        "os":                       ["linux"],
-        "loglevel":                 "info",
-        "keywords":                 ["ioBroker", "monitoring", "tinker board"],
-        "main":                     "main.js",
+        "mode": "daemon",
+        "platform": "javascript/Node.js",
+        "os": [
+            "linux"
+        ],
+        "loglevel": "info",
+        "keywords": [
+            "ioBroker",
+            "monitoring",
+            "tinker board"
+        ],
+        "main": "main.js",
         "authors": [
             "simatec <nais@gmx.net>"
         ],
-        "license":                  "MIT",
-        "singletonHost":             true,
-        "readme":                   "https://github.com/simatec/ioBroker.tinker/blob/master/README.md",
-        "icon":                     "tinker.png",
-        "materialize":              true,
-        "type":                     "hardware",
-        "enabled":                  true,
-        "extIcon":                  "https://raw.githubusercontent.com/simatec/ioBroker.tinker/master/admin/tinker.png"
+        "license": "MIT",
+        "singletonHost": true,
+        "readme": "https://github.com/simatec/ioBroker.tinker/blob/master/README.md",
+        "icon": "tinker.png",
+        "materialize": true,
+        "type": "hardware",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.tinker/master/admin/tinker.png"
     },
     "native": {
         "c_cpu": true,
@@ -128,10 +134,10 @@
                 "post": "$1/1024"
             },
             "memory_available": {
-	        "command": "cat /proc/meminfo",
-	        "regexp": "MemAvailable:\\s+(\\d+)",
-	        "post": "$1/1024",
-	        "multiline": true
+                "command": "cat /proc/meminfo",
+                "regexp": "MemAvailable:\\s+(\\d+)",
+                "post": "$1/1024",
+                "multiline": true
             }
         },
         "network": {
@@ -201,8 +207,6 @@
             }
         }
     },
-    "objects": [
-    ],
-    "instanceObjects": [
-    ]
+    "objects": [],
+    "instanceObjects": []
 }

@@ -2,12 +2,16 @@
 # ioBroker.tinker
 ===================
 
-[![NPM version](http://img.shields.io/npm/v/iobroker.tinker.svg)](https://www.npmjs.com/package/iobroker.tinker)
+![Number of Installations](http://iobroker.live/badges/tinker-installed.svg) ![Number of Installations](http://iobroker.live/badges/tinker-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.tinker.svg)](https://www.npmjs.com/package/iobroker.tinker)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.tinker.svg)](https://www.npmjs.com/package/iobroker.tinker)
 
 [![NPM](https://nodei.co/npm/iobroker.tinker.png?downloads=true)](https://nodei.co/npm/iobroker.tinker/)
 
 Tinker Board Monitor adapter is Modified Version of Raspberry PI Monitor adapter and OrangePi Monitor adapter for ioBroker
+
+**If you like it, please consider a donation:**
+  
+[![paypal](https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q4EEXQ6U96ZTQ&source=url)
 
 ### Important Information
 
@@ -65,6 +69,9 @@ On configuration page you can select following modules:
 
 ### 1.0.0 (2020-04-07)
 (simatec) Release 1.0.0
+
+### 0.1.3 (2019-03-14)
+* (simatec) Ready for latest
 
 ### 0.1.1 (2019-01-08)
 * Fix for new iobroker Installer
