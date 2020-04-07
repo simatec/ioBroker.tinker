@@ -7,6 +7,7 @@ const utils = require('@iobroker/adapter-core'); // Get common adapter utils
 const adapterName = require('./package.json').name.split('.').pop();
 let adapter;
 let timer;
+var config = adapter.config;
 
 /*
 var adapter = utils.adapter({
@@ -79,7 +80,7 @@ var objects;
 var exec;
 var tinker = {};
 var table = {};
-var config = adapter.config;
+//var config = adapter.config;
 var oldstyle = false;
 
 function main(adapter) {

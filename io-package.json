@@ -93,6 +93,8 @@
         "materialize": true,
         "type": "hardware",
         "enabled": true,
+        "stopBeforeUpdate": true,
+        "compact": true,
         "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.tinker/master/admin/tinker.png"
     },
     "native": {
