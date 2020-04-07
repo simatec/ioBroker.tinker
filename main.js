@@ -7,7 +7,7 @@ const utils = require('@iobroker/adapter-core'); // Get common adapter utils
 const adapterName = require('./package.json').name.split('.').pop();
 let adapter;
 let timer;
-var config = adapter.config;
+let config;
 
 /*
 var adapter = utils.adapter({
@@ -21,6 +21,7 @@ function startAdapter(options) {
 
     //ready: function () {
     adapter.on('ready', () => {
+        config = adapter.config;
         if (adapter.config.forceinit) {
             adapter.objects.getObjectList({ startkey: adapter.name + '.' + adapter.instance, endkey: adapter.name + '.' + adapter.instance + '\u9999' }, function (err, res) {
                 res = res.rows;
