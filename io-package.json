@@ -109,13 +109,13 @@
         "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.tinker/master/admin/tinker.png"
     },
     "native": {
-        "c_cpu": true,
-        "c_memory": true,
-        "c_network": true,
-        "c_sdcard": true,
-        "c_swap": true,
-        "c_temperature": true,
-        "c_uptime": true,
+        "c_cpu": false,
+        "c_memory": false,
+        "c_network": false,
+        "c_sdcard": false,
+        "c_swap": false,
+        "c_temperature": false,
+        "c_uptime": false,
         "c_wlan": false,
         "interval": 60000,
         "cpu": {
