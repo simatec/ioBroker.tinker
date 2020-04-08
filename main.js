@@ -3,11 +3,22 @@
  *
  *      License: MIT
  */
+
+/* jshint -W097 */
+/* jshint strict: false */
+/*jslint node: true */
+'use strict';
+
 const utils = require('@iobroker/adapter-core'); // Get common adapter utils
+const exec = require('child_process').execSync;
 const adapterName = require('./package.json').name.split('.').pop();
+
 let adapter;
 let timer;
 let config;
+let objects;
+let tinker = {};
+let table = {};
 
 function startAdapter(options) {
     options = options || {};
@@ -20,8 +31,8 @@ function startAdapter(options) {
         if (adapter.config.forceinit) {
             adapter.objects.getObjectList({ startkey: adapter.name + '.' + adapter.instance, endkey: adapter.name + '.' + adapter.instance + '\u9999' }, function (err, res) {
                 res = res.rows;
-                for (var i = 0; i < res.length; i++) {
-                    var id = res[i].doc.common.name;
+                for (const i = 0; i < res.length; i++) {
+                    const id = res[i].doc.common.name;
 
                     adapter.log.debug('Remove ' + id + ': ' + id);
 
@@ -41,7 +52,7 @@ function startAdapter(options) {
         adapter.objects.getObjectList({ include_docs: true }, function (err, res) {
             res = res.rows;
             objects = {};
-            for (var i = 0; i < res.length; i++) {
+            for (const i = 0; i < res.length; i++) {
                 objects[res[i].doc._id] = res[i].doc;
             }
             adapter.log.debug('received all objects');
@@ -65,26 +76,9 @@ function startAdapter(options) {
     return adapter;
 }
 
-var objects;
-var exec;
-var tinker = {};
-var table = {};
-var oldstyle = false;
-
 function main(adapter) {
     // TODO: Check which Objects we provide
     timer = setInterval(parser, adapter.config.interval || 60000);
-
-    var version = process.version;
-    var va = version.split('.');
-    if (va[0] === 'v0' && va[1] === '10') {
-        adapter.log.debug('NODE Version = ' + version + ', we need new exec-sync');
-        exec = require('sync-exec');
-        oldstyle = true;
-    } else {
-        adapter.log.debug('NODE Version = ' + version + ', we need new execSync');
-        exec = require('child_process').execSync;
-    }
     parser();
 }
 
@@ -96,36 +90,32 @@ function parser() {
     if (config === undefined) {
         config = adapter.config;
     }
-    for (var c in config) {
+    for (const c in config) {
         if (!config.hasOwnProperty(c)) continue;
 
         adapter.log.debug('PARSING: ' + c);
 
         if (c.indexOf('c_') !== 0 && config['c_' + c] === true) {
             table[c] = new Array(20);
-            var o = config[c];
-            for (var i in o) {
+            const o = config[c];
+            for (const i in o) {
                 if (!o.hasOwnProperty(i)) continue;
                 adapter.log.debug('    PARSING: ' + i);
-                var object = o[i];
-                var command = object.command;
-                var regexp;
+                const object = o[i];
+                const command = object.command;
+                let regexp;
                 if (object.multiline !== undefined) {
                     regexp = new RegExp(object.regexp, 'm');
                 } else {
                     regexp = new RegExp(object.regexp);
                 }
-                var post = object.post;
+                const post = object.post;
 
                 adapter.log.debug('---> ' + command);
 
-                var stdout;
+                let stdout;
                 try {
-                    if (oldstyle) {
-                        stdout = exec(command).stdout;
-                    } else {
-                        stdout = exec(command).toString();
-                    }
+                    stdout = exec(command).toString();
                     adapter.log.debug('------------- ' + stdout);
                 } catch (er) {
                     adapter.log.debug(er.stack);
@@ -135,7 +125,7 @@ function parser() {
                     continue;
                 }
 
-                var match = regexp.exec(stdout);
+                const match = regexp.exec(stdout);
                 adapter.log.debug('---> REGEXP: ' + regexp);
                 if (match !== undefined && match !== null && match.length !== undefined) {
                     adapter.log.debug('GROUPS: ' + match.length);
@@ -143,10 +133,10 @@ function parser() {
                 // TODO: if Group Match is bigger then 2
                 // split groups and header into seperate objects
                 if (match !== undefined && match !== null && match.length > 2) {
-                    var lname = i.split(',');
-                    for (var m = 1; m < match.length; m++) {
-                        var value = match[m];
-                        var name = lname[m - 1];
+                    const lname = i.split(',');
+                    for (const m = 1; m < match.length; m++) {
+                        const value = match[m];
+                        const name = lname[m - 1];
                         adapter.log.debug('MATCHING: ' + value);
                         adapter.log.debug('NAME: ' + name + ', VALULE: ' + value);
 
@@ -155,7 +145,7 @@ function parser() {
                     }
                 } else {
                     adapter.log.debug('---> POST:   ' + post);
-                    var value;
+                    let value;
                     if (match !== undefined && match !== null) {
                         value = match[1];
                     } else {
@@ -175,7 +165,7 @@ function parser() {
         adapter.log.debug(c.indexOf('c_'));
         if (c.indexOf('c_') !== 0 && config['c_' + c]) {
             if (objects[c] === undefined) {
-                var stateObj = {
+                const stateObj = {
                     common: {
                         name: c, // You can add here some description
                         read: true,
@@ -188,20 +178,20 @@ function parser() {
 
                 adapter.extendObject(c, stateObj);
             }
-            var o = config[c];
-            for (var i in o) {
+            const o = config[c];
+            for (const i in o) {
                 if (!o.hasOwnProperty(i)) continue;
-                var object = o[i];
-                var command = object.command;
-                var post = object.post;
+                const object = o[i];
+                const command = object.command;
+                const post = object.post;
 
                 adapter.log.debug('---> POST:   ' + post + ' for ' + i + ' in ' + o);
-                var value;
+                let value;
 
-                var lname = i.split(',');
+                const lname = i.split(',');
                 if (lname !== undefined && lname.length > 1) {
-                    for (var m = 0; m < lname.length; m++) {
-                        var name = lname[m];
+                    for (const m = 0; m < lname.length; m++) {
+                        const name = lname[m];
                         value = tinker[name];
 
 
@@ -209,7 +199,7 @@ function parser() {
                         // TODO: Check if value is number and format it 2 Digits
                         if (!isNaN(value)) {
                             value = parseFloat(value);
-                            var re = new RegExp(/^\d+\.\d+$/);
+                            const re = new RegExp(/^\d+\.\d+$/);
                             if (re.exec(value)) {
                                 value = value.toFixed(2);
                             }
@@ -218,11 +208,11 @@ function parser() {
                         adapter.log.debug('MATCHING: ' + value);
                         adapter.log.debug('NAME: ' + name + ' VALULE: ' + value);
 
-                        var objectName = adapter.name + '.' + adapter.instance + '.' + c + '.' + name;
+                        const objectName = adapter.name + '.' + adapter.instance + '.' + c + '.' + name;
                         adapter.log.debug('SETSTATE FOR ' + objectName + ' VALUE = ' + value);
                         if (objects[objectName] === undefined) {
                             // TODO Create an Objecttree
-                            var stateObj = {
+                            const stateObj = {
                                 common: {
                                     name: objectName, // You can add here some description
                                     read: true,
@@ -256,17 +246,17 @@ function parser() {
                         // TODO: Check if value is number and format it 2 Digits
                         if (!isNaN(value)) {
                             value = parseFloat(value);
-                            var r = new RegExp(/^\d+\.\d+$/);
+                            const r = new RegExp(/^\d+\.\d+$/);
                             if (r.exec(value)) {
                                 value = value.toFixed(2);
                             }
                         }
 
-                        var objectName = adapter.name + '.' + adapter.instance + '.' + c + '.' + i;
+                        const objectName = adapter.name + '.' + adapter.instance + '.' + c + '.' + i;
                         adapter.log.debug('SETSTATE FOR ' + objectName + ' VALUE = ' + value);
                         if (objects[objectName] === undefined) {
                             // TODO Create an Objecttree
-                            var stateObj = {
+                            const stateObj = {
                                 common: {
                                     name: objectName, // You can add here some description
                                     read: true,
