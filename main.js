@@ -30,7 +30,7 @@ function startAdapter(options) {
     adapter.on('ready', () => {
         config = adapter.config;
         if (adapter.config.forceinit) {
-            adapter.objects.getObjectList({ startkey: adapter.name + '.' + adapter.instance, endkey: adapter.name + '.' + adapter.instance + '\u9999' }, function (err, res) {
+            adapter.getObjectList({ startkey: adapter.name + '.' + adapter.instance, endkey: adapter.name + '.' + adapter.instance + '\u9999' }, function (err, res) {
                 res = res.rows;
                 for (let i = 0; i < res.length; i++) {
                     const id = res[i].doc.common.name;
@@ -50,7 +50,7 @@ function startAdapter(options) {
         }
         adapter.subscribeStates('*');
 
-        adapter.objects.getObjectList({ include_docs: true }, function (err, res) {
+        adapter.getObjectList({ include_docs: true }, function (err, res) {
             res = res.rows;
             objects = {};
             for (let i = 0; i < res.length; i++) {
