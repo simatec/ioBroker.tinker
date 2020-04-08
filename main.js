@@ -19,6 +19,7 @@ let config;
 let objects;
 let tinker = {};
 let table = {};
+let errorsLogged = {};
 
 function startAdapter(options) {
     options = options || {};
@@ -277,8 +278,9 @@ function parser() {
                     } else {
                         if (i === 'wifi_send' || i === 'wifi_received') {
                             adapter.log.debug('No Value found for ' + i);
-                        } else {
+                        } else if (! errorsLogged[i]) {
                             adapter.log.error('No Value found for ' + i);
+                            errorsLogged[i] = true;
                         }
                     }
                 }
