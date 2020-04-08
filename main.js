@@ -159,7 +159,7 @@ function parser() {
     }
 
     // TODO: Parse twice to get post data and evaluate
-    for (c in config) {
+    for (let c in config) {
         if (!config.hasOwnProperty(c)) continue;
         adapter.log.debug('CURRENT = ' + c + ' ' + config['c_' + c]);
         adapter.log.debug(c.indexOf('c_'));
