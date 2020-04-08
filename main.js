@@ -31,7 +31,7 @@ function startAdapter(options) {
         if (adapter.config.forceinit) {
             adapter.objects.getObjectList({ startkey: adapter.name + '.' + adapter.instance, endkey: adapter.name + '.' + adapter.instance + '\u9999' }, function (err, res) {
                 res = res.rows;
-                for (const i = 0; i < res.length; i++) {
+                for (let i = 0; i < res.length; i++) {
                     const id = res[i].doc.common.name;
 
                     adapter.log.debug('Remove ' + id + ': ' + id);
@@ -52,7 +52,7 @@ function startAdapter(options) {
         adapter.objects.getObjectList({ include_docs: true }, function (err, res) {
             res = res.rows;
             objects = {};
-            for (const i = 0; i < res.length; i++) {
+            for (let i = 0; i < res.length; i++) {
                 objects[res[i].doc._id] = res[i].doc;
             }
             adapter.log.debug('received all objects');
@@ -90,7 +90,7 @@ function parser() {
     if (config === undefined) {
         config = adapter.config;
     }
-    for (const c in config) {
+    for (let c in config) {
         if (!config.hasOwnProperty(c)) continue;
 
         adapter.log.debug('PARSING: ' + c);
@@ -98,7 +98,7 @@ function parser() {
         if (c.indexOf('c_') !== 0 && config['c_' + c] === true) {
             table[c] = new Array(20);
             const o = config[c];
-            for (const i in o) {
+            for (let i in o) {
                 if (!o.hasOwnProperty(i)) continue;
                 adapter.log.debug('    PARSING: ' + i);
                 const object = o[i];
@@ -134,7 +134,7 @@ function parser() {
                 // split groups and header into seperate objects
                 if (match !== undefined && match !== null && match.length > 2) {
                     const lname = i.split(',');
-                    for (const m = 1; m < match.length; m++) {
+                    for (let m = 1; m < match.length; m++) {
                         const value = match[m];
                         const name = lname[m - 1];
                         adapter.log.debug('MATCHING: ' + value);
@@ -179,7 +179,7 @@ function parser() {
                 adapter.extendObject(c, stateObj);
             }
             const o = config[c];
-            for (const i in o) {
+            for (let i in o) {
                 if (!o.hasOwnProperty(i)) continue;
                 const object = o[i];
                 const command = object.command;
@@ -190,7 +190,7 @@ function parser() {
 
                 const lname = i.split(',');
                 if (lname !== undefined && lname.length > 1) {
-                    for (const m = 0; m < lname.length; m++) {
+                    for (let m = 0; m < lname.length; m++) {
                         const name = lname[m];
                         value = tinker[name];
 
