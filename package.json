@@ -2,7 +2,6 @@
   "name": "iobroker.tinker",
   "description": "Tinker Board-Monitor for ioBroker Installations",
   "version": "1.1.0",
-
   "engines": {
     "node": ">=10.0.0"
   },
@@ -43,12 +42,12 @@
   "main": "main.js",
   "scripts": {
     "test:js": "mocha \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",
-      "test:package": "mocha test/package --exit",
-      "test:unit": "mocha test/unit --exit",
-      "test:integration": "mocha test/integration --exit",
-      "test": "npm run test:js && npm run test:package",
-      "lint": "eslint",
-      "release": "release-script"
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:js && npm run test:package",
+    "lint": "eslint",
+    "release": "release-script"
   },
   "readmeFilename": "README.md"
 }
