@@ -71,8 +71,7 @@ On configuration page you can select following modules:
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
-
-### __WORK IN PROGRESS__
+### 1.1.1 (2021-11-18)
 * (simatec) Dependencies updated
 * (simatec) test and release updated
 
@@ -80,7 +79,6 @@ On configuration page you can select following modules:
 * (simatec) delete sync-exec
 * (simatec) Rewritten code on child_process
 * (simatec) code cleaned
-
 
 ### 1.0.0 (2020-04-07)
 * (simatec) Release 1.0.0
@@ -96,8 +94,6 @@ On configuration page you can select following modules:
 
 ### 0.0.1 (2018-07-03)
 * initial Version
-
-
 
 ## License
 

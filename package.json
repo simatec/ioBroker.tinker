@@ -1,7 +1,7 @@
 {
   "name": "iobroker.tinker",
   "description": "Tinker Board-Monitor for ioBroker Installations",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "engines": {
     "node": ">=10.0.0"
   },
