@@ -6,9 +6,8 @@
 ![Number of Installations](http://iobroker.live/badges/tinker-stable.svg)
 [![NPM version](http://img.shields.io/npm/v/iobroker.tinker.svg)](https://www.npmjs.com/package/iobroker.tinker)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.tinker.svg)](https://www.npmjs.com/package/iobroker.tinker)
-[![Dependency Status](https://img.shields.io/david/simatec/iobroker.tinker.svg)](https://david-dm.org/simatec/iobroker.tinker)
 [![Known Vulnerabilities](https://snyk.io/test/github/simatec/ioBroker.tinker/badge.svg)](https://snyk.io/test/github/simatec/ioBroker.tinker)
-[![Travis-CI](http://img.shields.io/travis/simatec/ioBroker.tinker/master.svg)](https://travis-ci.org/simatec/ioBroker.tinker)
+![Test and Release](https://github.com/simatec/ioBroker.uv-protect/workflows/Test%20and%20Release/badge.svg)
 
 [![NPM](https://nodei.co/npm/iobroker.tinker.png?downloads=true)](https://nodei.co/npm/iobroker.tinker/)
 
@@ -71,6 +70,11 @@ On configuration page you can select following modules:
 - WLAN
 
 ## Changelog
+<!-- ### __WORK IN PROGRESS__ -->
+
+### __WORK IN PROGRESS__
+* (simatec) Dependencies updated
+* (simatec) test and release updated
 
 ### 1.1.0 (2020-04-08)
 * (simatec) delete sync-exec
