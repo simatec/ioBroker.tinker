@@ -3,7 +3,7 @@
   "description": "Tinker Board-Monitor for ioBroker Installations",
   "version": "1.1.1",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=14.0.0"
   },
   "author": {
     "name": "simatec",
@@ -14,7 +14,6 @@
     "@iobroker/adapter-core": "^2.6.7"
   },
   "devDependencies": {
-    "@alcalzone/release-script": "^3.5.8",
     "@alcalzone/release-script-plugin-iobroker": "^3.5.9",
     "@alcalzone/release-script": "^3.5.9",
     "@alcalzone/release-script-plugin-license": "^3.5.9",
