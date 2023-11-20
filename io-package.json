@@ -1,9 +1,22 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "title": "Tinker-Board-Monitor",
     "news": {
+      "1.2.1": {
+        "en": "Dependencies updated",
+        "de": "Ausgaben aktualisiert",
+        "ru": "Обновленные зависимости",
+        "pt": "Dependências atualizadas",
+        "nl": "Afhankelijkheid geüpdateerd",
+        "fr": "Dépendances mises à jour",
+        "it": "Dipendenze aggiornate",
+        "es": "Actualización de las dependencias",
+        "pl": "Zależności",
+        "uk": "Залежність оновлено",
+        "zh-cn": "B. 更新的属地"
+      },
       "1.2.0": {
         "en": "Dependencies updated\ntest and release updated\nRepo updated",
         "de": "Ausgaben aktualisiert\ntest und release aktualisiert\nRepo aktualisiert",
@@ -72,17 +85,6 @@
         "it": "Pronto per ultimo",
         "es": "Listo para el ultimo",
         "pl": "Gotowy na ostatni"
-      },
-      "0.1.2": {
-        "en": "Bug Fix",
-        "de": "Bug-Fix",
-        "ru": "Исправлена ​​ошибка",
-        "pt": "Correção de Bug",
-        "nl": "Bug Fix",
-        "fr": "Correction d'un bug",
-        "it": "Risoluzione del problema",
-        "es": "Arreglo del fallo",
-        "pl": "Naprawa błędów"
       }
     },
     "titleLang": {
