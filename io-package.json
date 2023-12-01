@@ -122,7 +122,7 @@
     ],
     "main": "main.js",
     "authors": [
-      "simatec <nais@gmx.net>"
+      "simatec <tinker@simateccloud.de>"
     ],
     "license": "MIT",
     "singletonHost": true,
