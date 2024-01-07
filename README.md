@@ -79,7 +79,6 @@ On configuration page you can select following modules:
 * (simatec) many smal Fix
 * (simatec) Translation added
 
-### __WORK IN PROGRESS__
 ### 1.2.1 (2023-11-20)
 * (simatec) Dependencies updated
 
