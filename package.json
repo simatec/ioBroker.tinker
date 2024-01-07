@@ -20,14 +20,17 @@
     "gulp": "^4.0.2",
     "mocha": "^10.2.0",
     "chai": "^4.3.10",
-    "@iobroker/testing": "^4.1.0"
+    "@iobroker/testing": "^4.1.0",
+    "axios": "^1.6.5"
   },
   "homepage": "https://github.com/simatec/ioBroker.tinker",
   "license": "MIT",
   "keywords": [
-    "ioBroker",
     "monitoring",
-    "Tinker Board"
+    "TinkerBoard",
+    "Tinker",
+    "CPU",
+    "Memory"
   ],
   "repository": {
     "type": "git",

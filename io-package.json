@@ -1,252 +1,263 @@
 {
-  "common": {
-    "name": "tinker",
-    "version": "1.2.1",
-    "title": "Tinker-Board-Monitor",
-    "news": {
-      "1.2.1": {
-        "en": "Dependencies updated",
-        "de": "Ausgaben aktualisiert",
-        "ru": "Обновленные зависимости",
-        "pt": "Dependências atualizadas",
-        "nl": "Afhankelijkheid geüpdateerd",
-        "fr": "Dépendances mises à jour",
-        "it": "Dipendenze aggiornate",
-        "es": "Actualización de las dependencias",
-        "pl": "Zależności",
-        "uk": "Залежність оновлено",
-        "zh-cn": "B. 更新的属地"
-      },
-      "1.2.0": {
-        "en": "Dependencies updated\ntest and release updated\nRepo updated",
-        "de": "Ausgaben aktualisiert\ntest und release aktualisiert\nRepo aktualisiert",
-        "ru": "Обновленные зависимости\nтест и релиз обновлен\nРепо обновлен",
-        "pt": "Dependências atualizadas\nteste e lançamento atualizado\nRepo atualizado",
-        "nl": "Afhankelijkheid geüpdateerd\ntest en laat updaten\nVertaling:",
-        "fr": "Dépendances mises à jour\ntest and release updated\nRepo updated",
-        "it": "Dipendenze aggiornate\ntest e rilascio aggiornato\nRepo aggiornato",
-        "es": "Actualización de las dependencias\ntest and release updated\nRepo updated",
-        "pl": "Zależności\ntest i aktualizacja\nRepo updated",
-        "uk": "Залежність оновлено\nтест і реліз оновлений\nRepo оновлений",
-        "zh-cn": "B. 更新的属地\n试验和释放\n更新"
-      },
-      "1.1.1": {
-        "en": "Dependencies updated\ntest and release updated",
-        "de": "Abhängigkeiten aktualisiert\nTest und Release aktualisiert",
-        "ru": "Зависимости обновлены\nтест и выпуск обновлены",
-        "pt": "Dependências atualizadas\nteste e lançamento atualizados",
-        "nl": "Afhankelijkheden bijgewerkt\ntest en release bijgewerkt",
-        "fr": "Dépendances mises à jour\ntest et version mis à jour",
-        "it": "Dipendenze aggiornate\ntest e rilascio aggiornati",
-        "es": "Dependencias actualizadas\nprueba y lanzamiento actualizado",
-        "pl": "Zaktualizowano zależności\nzaktualizowano test i wydanie",
-        "zh-cn": "更新了依赖项\n测试和发布更新"
-      },
-      "1.1.0": {
-        "en": "deleted sync-exec; Rewritten code on child_process; code cleaned",
-        "de": "Sync-Exec gelöscht; Umgeschriebener Code für child_process; Code gereinigt",
-        "ru": "удален sync-exec; Переписать код на child_process; код очищен",
-        "pt": "exec sincronizado excluído; Código reescrito em child_process; código limpo",
-        "nl": "sync-exec verwijderd; Herschreven code op child_process; code schoongemaakt",
-        "fr": "sync-exec supprimé; Code réécrit sur child_process; code nettoyé",
-        "it": "cancellato sync-exec; Codice riscritto su child_process; codice pulito",
-        "es": "sync-exec eliminado; Código reescrito en child_process; código limpiado",
-        "pl": "usunięto sync-exec; Przepisany kod na child_process; kod został wyczyszczony"
-      },
-      "1.0.0": {
-        "en": "Release 1.0.0",
-        "de": "Release 1.0.0",
-        "ru": "Выпуск 1.0.0",
-        "pt": "Release 1.0.0",
-        "nl": "Release 1.0.0",
-        "fr": "Version 1.0.0",
-        "it": "Versione 1.0.0",
-        "es": "Release 1.0.0",
-        "pl": "Wersja 1.0.0"
-      },
-      "0.1.4": {
-        "en": "Fix io-package.json",
-        "de": "Fix io-package.json",
-        "ru": "Исправить io-package.json",
-        "pt": "Corrigir io-package.json",
-        "nl": "Fix io-package.json",
-        "fr": "Correction de io-package.json",
-        "it": "Correggere io-package.json",
-        "es": "Arreglar io-package.json",
-        "pl": "Napraw plik io-package.json"
-      },
-      "0.1.3": {
-        "en": "Ready for latest",
-        "de": "Bereit für den neuesten Stand",
-        "ru": "Готов к последним",
-        "pt": "Pronto para mais recente",
-        "nl": "Klaar voor de nieuwste",
-        "fr": "Prêt pour le dernier",
-        "it": "Pronto per ultimo",
-        "es": "Listo para el ultimo",
-        "pl": "Gotowy na ostatni"
-      }
+    "common": {
+        "name": "tinker",
+        "version": "1.2.1",
+        "title": "TinkerBoard Monitor",
+        "news": {
+            "1.2.1": {
+                "en": "Dependencies updated",
+                "de": "Ausgaben aktualisiert",
+                "ru": "Обновленные зависимости",
+                "pt": "Dependências atualizadas",
+                "nl": "Afhankelijkheid geüpdateerd",
+                "fr": "Dépendances mises à jour",
+                "it": "Dipendenze aggiornate",
+                "es": "Actualización de las dependencias",
+                "pl": "Zależności",
+                "uk": "Залежність оновлено",
+                "zh-cn": "B. 更新的属地"
+            },
+            "1.2.0": {
+                "en": "Dependencies updated\ntest and release updated\nRepo updated",
+                "de": "Ausgaben aktualisiert\ntest und release aktualisiert\nRepo aktualisiert",
+                "ru": "Обновленные зависимости\nтест и релиз обновлен\nРепо обновлен",
+                "pt": "Dependências atualizadas\nteste e lançamento atualizado\nRepo atualizado",
+                "nl": "Afhankelijkheid geüpdateerd\ntest en laat updaten\nVertaling:",
+                "fr": "Dépendances mises à jour\ntest and release updated\nRepo updated",
+                "it": "Dipendenze aggiornate\ntest e rilascio aggiornato\nRepo aggiornato",
+                "es": "Actualización de las dependencias\ntest and release updated\nRepo updated",
+                "pl": "Zależności\ntest i aktualizacja\nRepo updated",
+                "uk": "Залежність оновлено\nтест і реліз оновлений\nRepo оновлений",
+                "zh-cn": "B. 更新的属地\n试验和释放\n更新"
+            },
+            "1.1.1": {
+                "en": "Dependencies updated\ntest and release updated",
+                "de": "Abhängigkeiten aktualisiert\nTest und Release aktualisiert",
+                "ru": "Зависимости обновлены\nтест и выпуск обновлены",
+                "pt": "Dependências atualizadas\nteste e lançamento atualizados",
+                "nl": "Afhankelijkheden bijgewerkt\ntest en release bijgewerkt",
+                "fr": "Dépendances mises à jour\ntest et version mis à jour",
+                "it": "Dipendenze aggiornate\ntest e rilascio aggiornati",
+                "es": "Dependencias actualizadas\nprueba y lanzamiento actualizado",
+                "pl": "Zaktualizowano zależności\nzaktualizowano test i wydanie",
+                "zh-cn": "更新了依赖项\n测试和发布更新"
+            },
+            "1.1.0": {
+                "en": "deleted sync-exec; Rewritten code on child_process; code cleaned",
+                "de": "Sync-Exec gelöscht; Umgeschriebener Code für child_process; Code gereinigt",
+                "ru": "удален sync-exec; Переписать код на child_process; код очищен",
+                "pt": "exec sincronizado excluído; Código reescrito em child_process; código limpo",
+                "nl": "sync-exec verwijderd; Herschreven code op child_process; code schoongemaakt",
+                "fr": "sync-exec supprimé; Code réécrit sur child_process; code nettoyé",
+                "it": "cancellato sync-exec; Codice riscritto su child_process; codice pulito",
+                "es": "sync-exec eliminado; Código reescrito en child_process; código limpiado",
+                "pl": "usunięto sync-exec; Przepisany kod na child_process; kod został wyczyszczony",
+                "zh-cn": "删除同步执行；"
+            },
+            "1.0.0": {
+                "en": "Release 1.0.0",
+                "de": "Release 1.0.0",
+                "ru": "Выпуск 1.0.0",
+                "pt": "Release 1.0.0",
+                "nl": "Release 1.0.0",
+                "fr": "Version 1.0.0",
+                "it": "Versione 1.0.0",
+                "es": "Release 1.0.0",
+                "pl": "Wersja 1.0.0",
+                "zh-cn": "版本1.0.0"
+            },
+            "0.1.4": {
+                "en": "Fix io-package.json",
+                "de": "Fix io-package.json",
+                "ru": "Исправить io-package.json",
+                "pt": "Corrigir io-package.json",
+                "nl": "Fix io-package.json",
+                "fr": "Correction de io-package.json",
+                "it": "Correggere io-package.json",
+                "es": "Arreglar io-package.json",
+                "pl": "Napraw plik io-package.json",
+                "zh-cn": "修复 io-package.json"
+            },
+            "0.1.3": {
+                "en": "Ready for latest",
+                "de": "Bereit für den neuesten Stand",
+                "ru": "Готов к последним",
+                "pt": "Pronto para mais recente",
+                "nl": "Klaar voor de nieuwste",
+                "fr": "Prêt pour le dernier",
+                "it": "Pronto per ultimo",
+                "es": "Listo para el ultimo",
+                "pl": "Gotowy na ostatni",
+                "zh-cn": "准备好最新的"
+            }
+        },
+        "titleLang": {
+            "en": "TinkerBoard Monitoring",
+            "de": "TinkerBoard Monitoring",
+            "ru": "TinkerBoard Monitoring",
+            "pt": "Monitoramento de SinkerBoard",
+            "nl": "Controle TinkerBoard",
+            "fr": "Surveillance de TinkerBoard",
+            "it": "TinkerBoard Monitoraggio",
+            "es": "TinkerBoard Monitoring",
+            "pl": "TinkerBoard Monitoring",
+            "uk": "TinkerBoard Моніторинг",
+            "zh-cn": "小叮当监测"
+        },
+        "desc": {
+            "en": "TinkerBoard Monitor for ioBroker",
+            "de": "TinkerBoard Monitor für ioBroker",
+            "ru": "TinkerBoard Monitor для ioBroker",
+            "pt": "TinkerBoard Monitor para ioBroker",
+            "nl": "TinkerBoard Monitor voor ioBroker",
+            "fr": "Moniteur TinkerBoard pour ioBroker",
+            "it": "TinkerBoard Monitor per ioBroker",
+            "es": "TinkerBoard Monitor for ioBroker",
+            "pl": "TinkerBoard Monitor dla jOBroker",
+            "uk": "TinkerBoard монітор для ioBroker",
+            "zh-cn": "ioBroker的叮当监视器"
+        },
+        "mode": "daemon",
+        "platform": "javascript/Node.js",
+        "os": [
+            "linux"
+        ],
+        "loglevel": "info",
+        "keywords": [
+            "ioBroker",
+            "monitoring",
+            "tinkerboard"
+        ],
+        "main": "main.js",
+        "authors": [
+            "simatec <tinker@simateccloud.de>"
+        ],
+        "license": "MIT",
+        "singletonHost": true,
+        "readme": "https://github.com/simatec/ioBroker.tinker/blob/master/README.md",
+        "icon": "tinker.png",
+        "materialize": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "type": "hardware",
+        "tier": 2,
+        "enabled": true,
+        "stopBeforeUpdate": true,
+        "compact": true,
+        "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.tinker/master/admin/tinker.png"
     },
-    "titleLang": {
-      "en": "Tinker Board-monitoring",
-      "de": "Tinker Board-Mointor",
-      "ru": "Мониторинг Tinker Board",
-      "pt": "Tinker Board-monitoring",
-      "nl": "Tinker Board-monitoring",
-      "fr": "Tinker Board-surveillance",
-      "it": "Monitoraggio della scheda Tinker",
-      "es": "Tinker Board-monitoring",
-      "pl": "Monitorowanie płyt Tinker"
+    "native": {
+        "c_cpu": true,
+        "c_memory": true,
+        "c_network": true,
+        "c_sdcard": true,
+        "c_swap": true,
+        "c_temperature": true,
+        "c_uptime": true,
+        "c_wlan": false,
+        "interval": 60000,
+        "cpu": {
+            "cpu_frequency": {
+                "command": "test -r /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_frew && cat /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_freq || cat /sys/devices/system/cpu/cpufreq/policy0/scaling_cur_freq",
+                "regexp": "(.*)",
+                "post": "$1/1000"
+            },
+            "load1,load5,load15": {
+                "command": "cat /proc/loadavg",
+                "regexp": "^(\\S+)\\s(\\S+)\\s(\\S+)",
+                "post": ""
+            },
+            "scaling_governor": {
+                "command": "cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor",
+                "regexp": "(.*)",
+                "post": ""
+            }
+        },
+        "memory": {
+            "memory_total": {
+                "command": "cat /proc/meminfo",
+                "regexp": "MemTotal:\\s+(\\d+)",
+                "post": "$1/1024"
+            },
+            "memory_free": {
+                "command": "cat /proc/meminfo",
+                "regexp": "MemFree:\\s+(\\d+)",
+                "post": "$1/1024"
+            },
+            "memory_available": {
+                "command": "cat /proc/meminfo",
+                "regexp": "MemAvailable:\\s+(\\d+)",
+                "post": "$1/1024",
+                "multiline": true
+            }
+        },
+        "network": {
+            "net_received": {
+                "command": "cat /sys/class/net/eth0/statistics/rx_bytes",
+                "regexp": "(.*)",
+                "post": "$1*-1"
+            },
+            "net_send": {
+                "command": "cat /sys/class/net/eth0/statistics/tx_bytes",
+                "regexp": "(.*)",
+                "post": ""
+            }
+        },
+        "sdcard": {
+            "sdcard_root_total": {
+                "command": "df /",
+                "regexp": "\\S+\\s+(\\d+).*\\/$",
+                "post": "$1/1024",
+                "multiline": true
+            },
+            "sdcard_root_used": {
+                "command": "df /",
+                "regexp": "\\S+\\s+\\d+\\s+(\\d+).*\\/$",
+                "post": "$1/1024",
+                "multiline": true
+            }
+        },
+        "swap": {
+            "swap_total": {
+                "command": "cat /proc/meminfo",
+                "regexp": "SwapTotal:\\s+(\\d+)",
+                "post": "$1/1024",
+                "multiline": true
+            },
+            "swap_used": {
+                "command": "cat /proc/meminfo",
+                "regexp": "SwapFree:\\s+(\\d+)",
+                "post": "(tinker.swap_total - $1)/1024",
+                "multiline": true
+            }
+        },
+        "temperature": {
+            "soc_temp": {
+                "command": "cat /sys/devices/virtual/thermal/thermal_zone0/temp",
+                "regexp": "(.*)",
+                "post": "$1/1000"
+            }
+        },
+        "uptime": {
+            "uptime": {
+                "command": "cat /proc/uptime",
+                "regexp": "(^\\S+)",
+                "post": ""
+            }
+        },
+        "wlan": {
+            "wifi_received": {
+                "command": "cat /sys/class/net/wlan0/statistics/rx_bytes",
+                "regexp": "(.*)",
+                "post": "$1*-1"
+            },
+            "wifi_send": {
+                "command": "cat /sys/class/net/wlan0/statistics/tx_bytes",
+                "regexp": "(.*)",
+                "post": ""
+            }
+        }
     },
-    "desc": {
-      "en": "Tinker Board-Monitor for ioBroker",
-      "de": "Tinker Board-Monitor für ioBroker",
-      "ru": "Tinker Board-Monitor для ioBroker",
-      "pt": "Tinker Board-Monitor para ioBroker",
-      "nl": "Tinker Board-Monitor voor ioBroker",
-      "fr": "Tinker Board-Monitor pour ioBroker",
-      "it": "Tinker Board-Monitor per ioBroker",
-      "es": "Tinker Board-Monitor para ioBroker",
-      "pl": "Tinker Board-Monitor dla ioBroker"
-    },
-    "mode": "daemon",
-    "platform": "javascript/Node.js",
-    "os": [
-      "linux"
-    ],
-    "loglevel": "info",
-    "keywords": [
-      "ioBroker",
-      "monitoring",
-      "tinker board"
-    ],
-    "main": "main.js",
-    "authors": [
-      "simatec <tinker@simateccloud.de>"
-    ],
-    "license": "MIT",
-    "singletonHost": true,
-    "readme": "https://github.com/simatec/ioBroker.tinker/blob/master/README.md",
-    "icon": "tinker.png",
-    "materialize": true,
-    "type": "hardware",
-    "enabled": true,
-    "stopBeforeUpdate": true,
-    "compact": true,
-    "extIcon": "https://raw.githubusercontent.com/simatec/ioBroker.tinker/master/admin/tinker.png"
-  },
-  "native": {
-    "c_cpu": true,
-    "c_memory": true,
-    "c_network": true,
-    "c_sdcard": true,
-    "c_swap": true,
-    "c_temperature": true,
-    "c_uptime": true,
-    "c_wlan": false,
-    "interval": 60000,
-    "cpu": {
-      "cpu_frequency": {
-        "command": "cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq",
-        "regexp": "(.*)",
-        "post": "$1/1000"
-      },
-      "load1,load5,load15": {
-        "command": "cat /proc/loadavg",
-        "regexp": "^(\\S+)\\s(\\S+)\\s(\\S+)",
-        "post": ""
-      },
-      "scaling_governor": {
-        "command": "cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor",
-        "regexp": "(.*)",
-        "post": ""
-      }
-    },
-    "memory": {
-      "memory_total": {
-        "command": "cat /proc/meminfo",
-        "regexp": "MemTotal:\\s+(\\d+)",
-        "post": "$1/1024"
-      },
-      "memory_free": {
-        "command": "cat /proc/meminfo",
-        "regexp": "MemFree:\\s+(\\d+)",
-        "post": "$1/1024"
-      },
-      "memory_available": {
-        "command": "cat /proc/meminfo",
-        "regexp": "MemAvailable:\\s+(\\d+)",
-        "post": "$1/1024",
-        "multiline": true
-      }
-    },
-    "network": {
-      "net_received": {
-        "command": "cat /sys/class/net/eth0/statistics/rx_bytes",
-        "regexp": "(.*)",
-        "post": "$1*-1"
-      },
-      "net_send": {
-        "command": "cat /sys/class/net/eth0/statistics/tx_bytes",
-        "regexp": "(.*)",
-        "post": ""
-      }
-    },
-    "sdcard": {
-      "sdcard_root_total": {
-        "command": "df /",
-        "regexp": "\\S+\\s+(\\d+).*\\/$",
-        "post": "$1/1024",
-        "multiline": true
-      },
-      "sdcard_root_used": {
-        "command": "df /",
-        "regexp": "\\S+\\s+\\d+\\s+(\\d+).*\\/$",
-        "post": "$1/1024",
-        "multiline": true
-      }
-    },
-    "swap": {
-      "swap_total": {
-        "command": "cat /proc/meminfo",
-        "regexp": "SwapTotal:\\s+(\\d+)",
-        "post": "$1/1024",
-        "multiline": true
-      },
-      "swap_used": {
-        "command": "cat /proc/meminfo",
-        "regexp": "SwapFree:\\s+(\\d+)",
-        "post": "(tinker.swap_total - $1)/1024",
-        "multiline": true
-      }
-    },
-    "temperature": {
-      "soc_temp": {
-        "command": "cat /sys/devices/virtual/thermal/thermal_zone0/temp",
-        "regexp": "(.*)",
-        "post": "$1/1000"
-      }
-    },
-    "uptime": {
-      "uptime": {
-        "command": "cat /proc/uptime",
-        "regexp": "(^\\S+)",
-        "post": ""
-      }
-    },
-    "wlan": {
-      "wifi_received": {
-        "command": "cat /sys/class/net/wlan0/statistics/rx_bytes",
-        "regexp": "(.*)",
-        "post": "$1*-1"
-      },
-      "wifi_send": {
-        "command": "cat /sys/class/net/wlan0/statistics/tx_bytes",
-        "regexp": "(.*)",
-        "post": ""
-      }
-    }
-  },
-  "objects": [],
-  "instanceObjects": []
+    "objects": [],
+    "instanceObjects": []
 }

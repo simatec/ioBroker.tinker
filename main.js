@@ -202,7 +202,7 @@ function parser() {
                             value = parseFloat(value);
                             const re = new RegExp(/^\d+\.\d+$/);
                             if (re.exec(value)) {
-                                value = value.toFixed(2);
+                                value = parseFloat(value.toFixed(2));
                             }
                         }
 
@@ -249,7 +249,7 @@ function parser() {
                             value = parseFloat(value);
                             const r = new RegExp(/^\d+\.\d+$/);
                             if (r.exec(value)) {
-                                value = value.toFixed(2);
+                                value = parseFloat(value.toFixed(2));
                             }
                         }
 

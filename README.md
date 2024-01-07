@@ -75,6 +75,8 @@ On configuration page you can select following modules:
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
 * (simatec) Dependencies updated
+* (simatec) many smal Fix
+* (simatec) Translation added
 
 ### __WORK IN PROGRESS__
 ### 1.2.1 (2023-11-20)
@@ -113,7 +115,7 @@ On configuration page you can select following modules:
 
 The MIT License (MIT)
 
-Copyright (c) 2018 - 2023 simatec
+Copyright (c) 2018 - 2024 simatec
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

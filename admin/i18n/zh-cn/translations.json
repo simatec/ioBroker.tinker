@@ -1,0 +1,11 @@
+{
+    "CPU": "中央处理器",
+    "Memory": "记忆",
+    "Network": "网络",
+    "Swap": "交换",
+    "Temperature": "温度",
+    "Tinker Board-Monitor Adapter settings": "Tinker Board-监视器适配器设置",
+    "Uptime": "正常运行时间",
+    "WLAN": "无线局域网",
+    "sdcard": "SD卡"
+}

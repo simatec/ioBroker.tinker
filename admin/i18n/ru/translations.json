@@ -1,0 +1,11 @@
+{
+    "CPU": "ЦПУ",
+    "Memory": "Память",
+    "Network": "сеть",
+    "Swap": "Замена",
+    "Temperature": "температура",
+    "Tinker Board-Monitor Adapter settings": "Настройки адаптера Tinker Board-монитора",
+    "Uptime": "Uptime",
+    "WLAN": "WLAN",
+    "sdcard": "SD-карта"
+}
