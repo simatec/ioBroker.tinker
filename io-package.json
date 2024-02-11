@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "news": {
+      "1.3.1": {
+        "en": "Dependencies updated\nDesign Fix\nTranslation added\njsonConfig added\ngulp deleted\nadapter-dev added",
+        "de": "Ausgaben aktualisiert\nDesign Fix\nÜbersetzung hinzugefügt\njsonConfig hinzugefügt\ngulp gelöscht\nadapter-dev hinzugefügt",
+        "ru": "Обновленные данные о зависимостях\nДизайн Fix\nДобавлено\njsonConfig добавлен\ngulp удален\nадаптер-dev добавлен",
+        "pt": "Dependências atualizadas\nCorreção de Design\nTradução adicionada\njsonConfig adicionado\ngulp excluído\nadaptador-dev adicionado",
+        "nl": "Afhankelijkheden bijgewerkt\nOntwerpfix\nVertaling toegevoegd\njsonConfig toegevoegd\ngulp verwijderd\nadapter-dev toegevoegd",
+        "fr": "Dépendances actualisées\nCorrection de conception\nTraduction ajoutée\njsonConfig ajouté\ngulp supprimé\nadaptateur-dev ajouté",
+        "it": "Dipendenze aggiornate\nDesign Fix\nTraduzione aggiunto\njsonConfig aggiunto\ngulp cancellato\nadattatore-dev aggiunto",
+        "es": "Actualización de las dependencias\nDiseño fijo\nTraducción añadido\njsonConfig añadido\ngulp eliminado\nadaptador-dev añadido",
+        "pl": "Aktualizacja zależności\nPopraw projekt\nTłumaczenie dodane\njsonConfig dodany\ngulp usunięty\nadapter -dev dodany",
+        "uk": "Залежність оновлено\nФіксація дизайну\nПереклад додано\njsonConfig додано\nковпачок видалений\nадаптер-dev додано",
+        "zh-cn": "更新的依赖关系\n设计\n增加了翻译\n添加了 json 图形\n已删除\n添加适配器- dev"
+      },
       "1.3.0": {
         "en": "Dependencies updated\nmany smal Fix\nTranslation added",
         "de": "Ausgaben aktualisiert\nviele smal Fix\nÜbersetzung hinzugefügt",
@@ -80,19 +93,6 @@
         "pl": "Wersja 1.0.0",
         "uk": "Release 1.0.0",
         "zh-cn": "版本1.0.0"
-      },
-      "0.1.4": {
-        "en": "Fix io-package.json",
-        "de": "Fix io-package.json",
-        "ru": "Исправить io-package.json",
-        "pt": "Corrigir io-package.json",
-        "nl": "Fix io-package.json",
-        "fr": "Correction de io-package.json",
-        "it": "Correggere io-package.json",
-        "es": "Arreglar io-package.json",
-        "pl": "Napraw plik io-package.json",
-        "uk": "Fix io-package.json",
-        "zh-cn": "修复 io-package.json"
       }
     },
     "titleLang": {
