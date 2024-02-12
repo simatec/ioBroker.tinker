@@ -148,6 +148,16 @@
     "stopBeforeUpdate": true,
     "compact": true,
     "jsonConfig": true,
+    "dependencies": [
+      {
+        "js-controller": ">=4.0.0"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=5.1.0"
+      }
+    ],
     "adminUI": {
       "config": "json"
     },
