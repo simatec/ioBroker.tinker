@@ -52,7 +52,10 @@
     "release-patch": "release-script patch --yes",
     "release-minor": "release-script minor --yes",
     "release-major": "release-script major --yes",
-    "translate": "translate-adapter"
+    "translate": "translate-adapter",
+    "dev-server-run": "dev-server run tinker",
+    "dev-server-watch": "dev-server watch tinker",
+    "update": "npm update"
   },
   "readmeFilename": "README.md"
 }
