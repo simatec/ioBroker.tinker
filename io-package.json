@@ -131,15 +131,16 @@
       "monitoring",
       "tinkerboard"
     ],
-    "main": "main.js",
     "authors": [
       "simatec <tinker@simateccloud.de>"
     ],
-    "license": "MIT",
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
     "singletonHost": true,
     "readme": "https://github.com/simatec/ioBroker.tinker/blob/master/README.md",
     "icon": "tinker.png",
-    "materialize": true,
     "connectionType": "local",
     "dataSource": "poll",
     "type": "hardware",
@@ -150,7 +151,7 @@
     "jsonConfig": true,
     "dependencies": [
       {
-        "js-controller": ">=4.0.0"
+        "js-controller": ">=5.0.19"
       }
     ],
     "globalDependencies": [
