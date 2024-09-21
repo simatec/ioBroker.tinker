@@ -88,6 +88,7 @@ On configuration page you can select following modules:
 * (simatec) Docu updated
 * (simatec) dev-server added
 * (simatec) Repo Check fix
+* (simatec) Design Fix
 
 ### 1.3.2 (2024-02-14)
 * (simatec) Design Fix
