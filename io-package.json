@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.2",
+    "version": "1.3.3",
     "news": {
+      "1.3.3": {
+        "en": "Dependencies updated\nDocu updated\ndev-server added\nRepo Check fix\nDesign Fix",
+        "de": "Ausgaben aktualisiert\nDocu aktualisiert\ndev-server hinzugefügt\nRepo Check fix\nDesign Fix",
+        "ru": "Обновленные данные о зависимостях\nDocu\nдобавлено dev-server\nРеконструкция\nДизайн Fix",
+        "pt": "Dependências atualizadas\nDocu atualizado\ndev-server adicionado\nRepo Check correção\nCorreção de Design",
+        "nl": "Afhankelijkheden bijgewerkt\nDocu bijgewerkt\ndev-server toegevoegd\nRepo Controle fix\nOntwerpfix",
+        "fr": "Dépendances actualisées\nDocu mis à jour\ndev-server ajouté\nCorrection de la vérification de repo\nCorrection de conception",
+        "it": "Dipendenze aggiornate\nDocu aggiornato\naggiunto\nRepo Check fix\nDesign Fix",
+        "es": "Actualización de las dependencias\nDocu actualizado\ndev-server añadido\nRepo Check fix\nDiseño fijo",
+        "pl": "Aktualizacja zależności\nAktualizacja doku\ndev- server dodany\nSprawdź ponownie\nPopraw projekt",
+        "uk": "Залежність оновлено\nDocu оновлений\nдодано dev-server\nRepo Перевірити виправити\nФіксація дизайну",
+        "zh-cn": "更新的依赖关系\n更新 Docu\n添加了 dev 服务器\nRepo 检查修正\n设计"
+      },
       "1.3.2": {
         "en": "Design Fix\nSource code cleaned up",
         "de": "Design Fix\nQuellcode aufgeräumt",
@@ -80,19 +93,6 @@
         "pl": "Zaktualizowano zależności\nzaktualizowano test i wydanie",
         "uk": "Dependencies updated\ntest and release updated",
         "zh-cn": "更新了依赖项\n测试和发布更新"
-      },
-      "1.1.0": {
-        "en": "deleted sync-exec; Rewritten code on child_process; code cleaned",
-        "de": "Sync-Exec gelöscht; Umgeschriebener Code für child_process; Code gereinigt",
-        "ru": "удален sync-exec; Переписать код на child_process; код очищен",
-        "pt": "exec sincronizado excluído; Código reescrito em child_process; código limpo",
-        "nl": "sync-exec verwijderd; Herschreven code op child_process; code schoongemaakt",
-        "fr": "sync-exec supprimé; Code réécrit sur child_process; code nettoyé",
-        "it": "cancellato sync-exec; Codice riscritto su child_process; codice pulito",
-        "es": "sync-exec eliminado; Código reescrito en child_process; código limpiado",
-        "pl": "usunięto sync-exec; Przepisany kod na child_process; kod został wyczyszczony",
-        "uk": "deleted sync-exec; Rewritten code on child_process; code cleaned",
-        "zh-cn": "删除同步执行；"
       }
     },
     "titleLang": {
