@@ -1,99 +1,107 @@
 {
-    "type": "panel",
-    "i18n": true,
-    "items": {
-      "c_cpu": {
-        "newLine": true,
-        "type": "checkbox",
-        "label": "CPU",
-        "xs": 12,
-        "sm": 6,
-        "md": 6,
-        "lg": 2
-      },
-      "c_memory": {
-        "type": "checkbox",
-        "label": "Memory",
-        "xs": 12,
-        "sm": 6,
-        "md": 6,
-        "lg": 2
-      },
-      "c_network": {
-        "newLine": true,
-        "type": "checkbox",
-        "label": "Network",
-        "xs": 12,
-        "sm": 6,
-        "md": 6,
-        "lg": 2
-      },
-      "c_sdcard": {
-        "type": "checkbox",
-        "label": "sdcard",
-        "xs": 12,
-        "sm": 6,
-        "md": 6,
-        "lg": 2
-      },
-      "c_swap": {
-        "newLine": true,
-        "type": "checkbox",
-        "label": "Swap",
-        "xs": 12,
-        "sm": 6,
-        "md": 6,
-        "lg": 2
-      },
-      "c_temperature": {
-        "type": "checkbox",
-        "label": "Temperature",
-        "xs": 12,
-        "sm": 6,
-        "md": 6,
-        "lg": 2
-      },
-      "c_uptime": {
-        "newLine": true,
-        "type": "checkbox",
-        "label": "Uptime",
-        "xs": 12,
-        "sm": 6,
-        "md": 6,
-        "lg": 2
-      },
-      "c_wlan": {
-        "type": "checkbox",
-        "label": "WLAN",
-        "xs": 12,
-        "sm": 6,
-        "md": 6,
-        "lg": 2
-      },
-      "_helpLine": {
-        "newLine": true,
-        "type": "divider",
-        "color": "secondary"
-      },
-      "_donateTxt": {
-        "type": "staticText",
-        "text": "If you like this project and would like to support its development, you are welcome to leave a donation.",
-        "newLine": true
-      },
-      "_donate": {
-        "type": "staticImage",
-        "tooltip": "PayPal.Me",
-        "noTranslation": true,
-        "href": "https://paypal.me/mk1676",
-        "src": "https://img.shields.io/badge/paypal-donate%20%7C%20spenden-blue.svg",
-        "newLine": true
-      },
-      "_githubSponsor": {
-        "type": "staticImage",
-        "tooltip": "GitHub Sponsors",
-        "noTranslation": true,
-        "href": "https://github.com/sponsors/simatec",
-        "src": "https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86"
-      }
+  "type": "panel",
+  "i18n": true,
+  "items": {
+    "c_cpu": {
+      "newLine": true,
+      "type": "checkbox",
+      "label": "CPU",
+      "xs": 12,
+      "sm": 6,
+      "md": 6,
+      "lg": 2
+    },
+    "c_memory": {
+      "type": "checkbox",
+      "label": "Memory",
+      "xs": 12,
+      "sm": 6,
+      "md": 6,
+      "lg": 2
+    },
+    "c_network": {
+      "newLine": true,
+      "type": "checkbox",
+      "label": "Network",
+      "xs": 12,
+      "sm": 6,
+      "md": 6,
+      "lg": 2
+    },
+    "c_sdcard": {
+      "type": "checkbox",
+      "label": "sdcard",
+      "xs": 12,
+      "sm": 6,
+      "md": 6,
+      "lg": 2
+    },
+    "c_swap": {
+      "newLine": true,
+      "type": "checkbox",
+      "label": "Swap",
+      "xs": 12,
+      "sm": 6,
+      "md": 6,
+      "lg": 2
+    },
+    "c_temperature": {
+      "type": "checkbox",
+      "label": "Temperature",
+      "xs": 12,
+      "sm": 6,
+      "md": 6,
+      "lg": 2
+    },
+    "c_uptime": {
+      "newLine": true,
+      "type": "checkbox",
+      "label": "Uptime",
+      "xs": 12,
+      "sm": 6,
+      "md": 6,
+      "lg": 2
+    },
+    "c_wlan": {
+      "type": "checkbox",
+      "label": "WLAN",
+      "xs": 12,
+      "sm": 6,
+      "md": 6,
+      "lg": 2
+    },
+    "_helpLine": {
+      "newLine": true,
+      "type": "divider",
+      "color": "secondary"
+    },
+    "_donateTxt": {
+      "type": "staticText",
+      "text": "If you like this project and would like to support its development, you are welcome to leave a donation.",
+      "newLine": true
+    },
+    "_donate": {
+      "type": "staticImage",
+      "tooltip": "PayPal.Me",
+      "noTranslation": true,
+      "href": "https://paypal.me/mk1676",
+      "src": "https://img.shields.io/badge/paypal-donate%20%7C%20spenden-blue.svg",
+      "newLine": true,
+      "xs": 7,
+      "sm": 3,
+      "md": 3,
+      "lg": 1.2
+    },
+    "_githubSponsor": {
+      "type": "staticImage",
+      "tooltip": "GitHub Sponsors",
+      "noTranslation": true,
+      "href": "https://github.com/sponsors/simatec",
+      "src": "https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86",
+      "xs": 5,
+      "sm": 2,
+      "md": 2,
+      "lg": 0.8
     }
   }
+}

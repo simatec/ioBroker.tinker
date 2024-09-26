@@ -83,6 +83,9 @@ On configuration page you can select following modules:
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
+### __WORK IN PROGRESS__
+* (simatec) Fix for Admin 7.1.5
+
 ### 1.3.3 (2024-09-21)
 * (simatec) Dependencies updated
 * (simatec) Docu updated
