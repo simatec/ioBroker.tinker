@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.3",
+    "version": "1.3.4",
     "news": {
+      "1.3.4": {
+        "en": "Fix for Admin 7.1.5",
+        "de": "Fix für Admin 7.1.5",
+        "ru": "7.1.5",
+        "pt": "Fix para Admin 7.1.5",
+        "nl": "Fix voor Admin 7.1.5",
+        "fr": "Correction pour Admin 7.1.5",
+        "it": "Fissare per Admin 7.1.5",
+        "es": "Corrección para Admin 7.1.5",
+        "pl": "Naprawiono dla Admin 7.1.5",
+        "uk": "Виправлення для адміністратора 7.1.5",
+        "zh-cn": "7.1.5 管理员的固定"
+      },
       "1.3.3": {
         "en": "Dependencies updated\nDocu updated\ndev-server added\nRepo Check fix\nDesign Fix",
         "de": "Ausgaben aktualisiert\nDocu aktualisiert\ndev-server hinzugefügt\nRepo Check fix\nDesign Fix",
@@ -80,19 +93,6 @@
         "pl": "Zależności\ntest i aktualizacja\nRepo updated",
         "uk": "Залежність оновлено\nтест і реліз оновлений\nRepo оновлений",
         "zh-cn": "B. 更新的属地\n试验和释放\n更新"
-      },
-      "1.1.1": {
-        "en": "Dependencies updated\ntest and release updated",
-        "de": "Abhängigkeiten aktualisiert\nTest und Release aktualisiert",
-        "ru": "Зависимости обновлены\nтест и выпуск обновлены",
-        "pt": "Dependências atualizadas\nteste e lançamento atualizados",
-        "nl": "Afhankelijkheden bijgewerkt\ntest en release bijgewerkt",
-        "fr": "Dépendances mises à jour\ntest et version mis à jour",
-        "it": "Dipendenze aggiornate\ntest e rilascio aggiornati",
-        "es": "Dependencias actualizadas\nprueba y lanzamiento actualizado",
-        "pl": "Zaktualizowano zależności\nzaktualizowano test i wydanie",
-        "uk": "Dependencies updated\ntest and release updated",
-        "zh-cn": "更新了依赖项\n测试和发布更新"
       }
     },
     "titleLang": {
