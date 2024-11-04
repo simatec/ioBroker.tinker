@@ -85,6 +85,7 @@ On configuration page you can select following modules:
 <!-- ### __WORK IN PROGRESS__ -->
 ### __WORK IN PROGRESS__
 * (simatec) Dependencies updated
+* (simatec) Fix jsonConfig
 
 ### 1.3.4 (2024-09-26)
 * (simatec) Fix for Admin 7.1.5
