@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.4",
+    "version": "1.3.5",
     "news": {
+      "1.3.5": {
+        "en": "Dependencies updated\nFix jsonConfig\nIssue Action added\neslint-config added",
+        "de": "Ausgaben aktualisiert\nFehlerbehebung jsonConfig\nAusgabe Aktion hinzugefügt\neslint-config hinzugefügt",
+        "ru": "Обновленные данные о зависимостях\nFix jsonConfig\nДополнительные меры\nдобавлена eslint-config",
+        "pt": "Dependências atualizadas\nFixar jsonConfig\nAção de problemas adicionada\neslint-config adicionado",
+        "nl": "Afhankelijkheden bijgewerkt\nFix jsonConfig\nOnderwerpactie toegevoegd\neslint-config toegevoegd",
+        "fr": "Dépendances actualisées\nCorrection de jsonConfig\nMesure à prendre\neslint-config ajouté",
+        "it": "Dipendenze aggiornate\nFissare jsonConfig\nAzione di problema aggiunto\neslint-config aggiunto",
+        "es": "Actualización de las dependencias\nCorrección jsonConfig\nTema Acción añadido\neslint-config añadido",
+        "pl": "Aktualizacja zależności\nNapraw jsonConfig\nDodano działanie\neslint- config dodany",
+        "uk": "Залежність оновлено\nВиправлення jsonConfig\nДодана емісія\neslint-config додано",
+        "zh-cn": "更新的依赖关系\n修复 Json 连接\n添加的问题行动\n添加埃斯林特配置"
+      },
       "1.3.4": {
         "en": "Fix for Admin 7.1.5",
         "de": "Fix für Admin 7.1.5",
@@ -80,19 +93,6 @@
         "pl": "Zależności",
         "uk": "Залежність оновлено",
         "zh-cn": "B. 更新的属地"
-      },
-      "1.2.0": {
-        "en": "Dependencies updated\ntest and release updated\nRepo updated",
-        "de": "Ausgaben aktualisiert\ntest und release aktualisiert\nRepo aktualisiert",
-        "ru": "Обновленные зависимости\nтест и релиз обновлен\nРепо обновлен",
-        "pt": "Dependências atualizadas\nteste e lançamento atualizado\nRepo atualizado",
-        "nl": "Afhankelijkheid geüpdateerd\ntest en laat updaten\nVertaling:",
-        "fr": "Dépendances mises à jour\ntest and release updated\nRepo updated",
-        "it": "Dipendenze aggiornate\ntest e rilascio aggiornato\nRepo aggiornato",
-        "es": "Actualización de las dependencias\ntest and release updated\nRepo updated",
-        "pl": "Zależności\ntest i aktualizacja\nRepo updated",
-        "uk": "Залежність оновлено\nтест і реліз оновлений\nRepo оновлений",
-        "zh-cn": "B. 更新的属地\n试验和释放\n更新"
       }
     },
     "titleLang": {
