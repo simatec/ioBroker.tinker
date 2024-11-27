@@ -87,6 +87,7 @@ On configuration page you can select following modules:
 * (simatec) Dependencies updated
 * (simatec) Fix jsonConfig
 * (simatec) Issue Action added
+* (simatec) eslint-config added
 
 ### 1.3.4 (2024-09-26)
 * (simatec) Fix for Admin 7.1.5
