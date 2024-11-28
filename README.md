@@ -83,6 +83,9 @@ On configuration page you can select following modules:
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
+### __WORK IN PROGRESS__
+* (simatec) eslint-config fix
+
 ### 1.3.5 (2024-11-27)
 * (simatec) Dependencies updated
 * (simatec) Fix jsonConfig
