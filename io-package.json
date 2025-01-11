@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.5",
+    "version": "1.3.6",
     "news": {
+      "1.3.6": {
+        "en": "eslint-config fix\nDependencies updated\nUpdate License",
+        "de": "eslint-config fix\nAusgaben aktualisiert\nLizenz aktualisieren",
+        "ru": "eslint-конфигурация\nОбновленные данные о зависимостях\nЛицензия обновления",
+        "pt": "eslint-config fix\nDependências atualizadas\nLicença de atualização",
+        "nl": "eslint-config fix\nAfhankelijkheden bijgewerkt\nLicentie bijwerken",
+        "fr": "fixateur eslint-config\nDépendances actualisées\nMettre à jour la licence",
+        "it": "eslint-config fix\nDipendenze aggiornate\nLicenza di aggiornamento",
+        "es": "eslint-config fix\nActualización de las dependencias\nActualizar Licencia",
+        "pl": "fix eslint- config\nAktualizacja zależności\nUaktualnij licencję",
+        "uk": "eslint-config виправити\nЗалежність оновлено\nОновлення ліцензії",
+        "zh-cn": "埃斯林特配置修复\n更新的依赖关系\n更新许可证"
+      },
       "1.3.5": {
         "en": "Dependencies updated\nFix jsonConfig\nIssue Action added\neslint-config added",
         "de": "Ausgaben aktualisiert\nFehlerbehebung jsonConfig\nAusgabe Aktion hinzugefügt\neslint-config hinzugefügt",
@@ -80,19 +93,6 @@
         "pl": "Aktualizacja zależności\nwiele slal Fix\nTłumaczenie dodane",
         "uk": "Залежність оновлено\nбагато smal Fix\nПереклад додано",
         "zh-cn": "更新的依赖关系\n许多smal 修补\n增加了翻译"
-      },
-      "1.2.1": {
-        "en": "Dependencies updated",
-        "de": "Ausgaben aktualisiert",
-        "ru": "Обновленные зависимости",
-        "pt": "Dependências atualizadas",
-        "nl": "Afhankelijkheid geüpdateerd",
-        "fr": "Dépendances mises à jour",
-        "it": "Dipendenze aggiornate",
-        "es": "Actualización de las dependencias",
-        "pl": "Zależności",
-        "uk": "Залежність оновлено",
-        "zh-cn": "B. 更新的属地"
       }
     },
     "titleLang": {
