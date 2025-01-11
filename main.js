@@ -30,20 +30,20 @@ function startAdapter(options) {
     adapter.on('ready', () => {
         config = adapter.config;
         if (adapter.config.forceinit) {
-            adapter.getObjectList({ startkey: adapter.name + '.' + adapter.instance, endkey: adapter.name + '.' + adapter.instance + '\u9999' }, function (err, res) {
+            adapter.getObjectList({ startkey: `${adapter.name}.${adapter.instance}`, endkey: `${adapter.name}.${adapter.instance}\u9999` }, function (err, res) {
                 res = res.rows;
                 for (let i = 0; i < res.length; i++) {
                     const id = res[i].doc.common.name;
 
-                    adapter.log.debug('Remove ' + id + ': ' + id);
+                    adapter.log.debug(`Remove ${id}: ${id}`);
 
                     adapter.delObject(id, function (res, err) {
-                        if (res !== undefined && res !== 'Not exists') adapter.log.error('res from delObject: ' + res);
-                        if (err !== undefined) adapter.log.error('err from delObject: ' + err);
+                        if (res !== undefined && res !== 'Not exists') adapter.log.error(`res from delObject: ${res}`);
+                        if (err !== undefined) adapter.log.error(`err from delObject: ${err}`);
                     });
                     adapter.deleteState(id, function (res, err) {
-                        if (res !== undefined && res !== 'Not exists') adapter.log.error('res from deleteState: ' + res);
-                        if (err !== undefined) adapter.log.error('err from deleteState: ' + err);
+                        if (res !== undefined && res !== 'Not exists') adapter.log.error(`res from deleteState: ${res}`);
+                        if (err !== undefined) adapter.log.error(`err from deleteState: ${err}`);
                     });
                 }
             });
@@ -62,7 +62,7 @@ function startAdapter(options) {
     });
 
     adapter.on('stateChange', (id, state) => {
-        adapter.log.debug('stateChange for ' + id + ' found state = ' + JSON.stringify(state));
+        adapter.log.debug(`stateChange for ${id} found state = ${JSON.stringify(state)}`);
     });
 
     adapter.on('unload', (callback) => {
@@ -94,14 +94,14 @@ function parser() {
     for (let c in config) {
         if (!config.hasOwnProperty(c)) continue;
 
-        adapter.log.debug('PARSING: ' + c);
+        adapter.log.debug(`PARSING: ${c}`);
 
-        if (c.indexOf('c_') !== 0 && config['c_' + c] === true) {
+        if (c.indexOf('c_') !== 0 && config[`c_${c}`] === true) {
             table[c] = new Array(20);
             const o = config[c];
             for (let i in o) {
                 if (!o.hasOwnProperty(i)) continue;
-                adapter.log.debug('    PARSING: ' + i);
+                adapter.log.debug(`    PARSING: ${i}`);
                 const object = o[i];
                 const command = object.command;
                 let regexp;
@@ -112,12 +112,12 @@ function parser() {
                 }
                 const post = object.post;
 
-                adapter.log.debug('---> ' + command);
+                adapter.log.debug(`---> ${command}`);
 
                 let stdout;
                 try {
                     stdout = exec(command).toString();
-                    adapter.log.debug('------------- ' + stdout);
+                    adapter.log.debug(`------------- ${stdout}`);
                 } catch (er) {
                     adapter.log.debug(er.stack);
                     if (er.pid) console.log('%s (pid: %d) exited with status %d',
@@ -127,9 +127,9 @@ function parser() {
                 }
 
                 const match = regexp.exec(stdout);
-                adapter.log.debug('---> REGEXP: ' + regexp);
+                adapter.log.debug(`---> REGEXP: ${regexp}`);
                 if (match !== undefined && match !== null && match.length !== undefined) {
-                    adapter.log.debug('GROUPS: ' + match.length);
+                    adapter.log.debug(`GROUPS: ${match.length}`);
                 }
                 // TODO: if Group Match is bigger then 2
                 // split groups and header into seperate objects
@@ -138,14 +138,14 @@ function parser() {
                     for (let m = 1; m < match.length; m++) {
                         const value = match[m];
                         const name = lname[m - 1];
-                        adapter.log.debug('MATCHING: ' + value);
-                        adapter.log.debug('NAME: ' + name + ', VALULE: ' + value);
+                        adapter.log.debug(`MATCHING: ${value}`);
+                        adapter.log.debug(`NAME: ${name}, VALULE: ${value}`);
 
                         tinker[name] = value;
                         table[c][i] = value;
                     }
                 } else {
-                    adapter.log.debug('---> POST:   ' + post);
+                    adapter.log.debug(`---> POST:   ${post}`);
                     let value;
                     if (match !== undefined && match !== null) {
                         value = match[1];
@@ -162,9 +162,9 @@ function parser() {
     // TODO: Parse twice to get post data and evaluate
     for (let c in config) {
         if (!config.hasOwnProperty(c)) continue;
-        adapter.log.debug('CURRENT = ' + c + ' ' + config['c_' + c]);
+        adapter.log.debug(`CURRENT = ${c} ${config[`c_${c}`]}`);
         adapter.log.debug(c.indexOf('c_'));
-        if (c.indexOf('c_') !== 0 && config['c_' + c]) {
+        if (c.indexOf('c_') !== 0 && config[`c_${c}`]) {
             if (objects[c] === undefined) {
                 const stateObj = {
                     common: {
@@ -186,7 +186,7 @@ function parser() {
                 const command = object.command;
                 const post = object.post;
 
-                adapter.log.debug('---> POST:   ' + post + ' for ' + i + ' in ' + o);
+                adapter.log.debug(`---> POST:   ${post} for ${i} in ${o}`);
                 let value;
 
                 const lname = i.split(',');
@@ -206,11 +206,11 @@ function parser() {
                             }
                         }
 
-                        adapter.log.debug('MATCHING: ' + value);
-                        adapter.log.debug('NAME: ' + name + ' VALULE: ' + value);
+                        adapter.log.debug(`MATCHING: ${value}`);
+                        adapter.log.debug(`NAME: ${name} VALULE: ${value}`);
 
-                        const objectName = adapter.name + '.' + adapter.instance + '.' + c + '.' + name;
-                        adapter.log.debug('SETSTATE FOR ' + objectName + ' VALUE = ' + value);
+                        const objectName = `${adapter.name}.${adapter.instance}.${c}.${name}`;
+                        adapter.log.debug(`SETSTATE FOR ${objectName} VALUE = ${value}`);
                         if (objects[objectName] === undefined) {
                             // TODO Create an Objecttree
                             const stateObj = {
@@ -236,11 +236,11 @@ function parser() {
                     value = tinker[i];
                     if (value !== undefined && value !== '' && value !== null) {
                         if (post.indexOf('$1') !== -1) {
-                            adapter.log.debug('VALUE: ' + value + ' POST: ' + post);
+                            adapter.log.debug(`VALUE: ${value} POST: ${post}`);
                             try {
                                 value = eval(post.replace('$1', value));
                             } catch (e) {
-                                adapter.log.error('Cannot evaluate: ' + post.replace('$1', value));
+                                adapter.log.error(`Cannot evaluate: ${post.replace('$1', value)}`);
                                 value = NaN;
                             }
                         }
@@ -253,8 +253,8 @@ function parser() {
                             }
                         }
 
-                        const objectName = adapter.name + '.' + adapter.instance + '.' + c + '.' + i;
-                        adapter.log.debug('SETSTATE FOR ' + objectName + ' VALUE = ' + value);
+                        const objectName = `${adapter.name}.${adapter.instance}.${c}.${i}`;
+                        adapter.log.debug(`SETSTATE FOR ${objectName} VALUE = ${value}`);
                         if (objects[objectName] === undefined) {
                             // TODO Create an Objecttree
                             const stateObj = {
@@ -277,9 +277,9 @@ function parser() {
                         });
                     } else {
                         if (i === 'wifi_send' || i === 'wifi_received') {
-                            adapter.log.debug('No Value found for ' + i);
-                        } else if (! errorsLogged[i]) {
-                            adapter.log.error('No Value found for ' + i);
+                            adapter.log.debug(`No Value found for ${i}`);
+                        } else if (!errorsLogged[i]) {
+                            adapter.log.error(`No Value found for ${i}`);
                             errorsLogged[i] = true;
                         }
                     }
