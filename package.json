@@ -23,7 +23,7 @@
     "@iobroker/testing": "^5.0.0",
     "axios": "^1.7.9",
     "chai": "^4.3.10",
-    "mocha": "^11.0.1"
+    "mocha": "^11.1.0"
   },
   "homepage": "https://github.com/simatec/ioBroker.tinker",
   "license": "MIT",
