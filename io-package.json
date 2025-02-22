@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.6",
+    "version": "1.3.7",
     "news": {
+      "1.3.7": {
+        "en": "Dependencies updated\nsmall Fix",
+        "de": "Ausgaben aktualisiert\nkleiner Fix",
+        "ru": "Обновленные зависимости\nмаленький фикс",
+        "pt": "Dependências atualizadas\npequena fixação",
+        "nl": "Afhankelijkheden bijgewerkt\nkleine Fix",
+        "fr": "Dépendances actualisées\npetite Fix",
+        "it": "Dipendenze aggiornate\npiccolo fissaggio",
+        "es": "Actualización de las dependencias\npequeño",
+        "pl": "Aktualizacja zależności\nmały Fix",
+        "uk": "Залежність оновлено\nмали",
+        "zh-cn": "更新的依赖关系\n小修补"
+      },
       "1.3.6": {
         "en": "eslint-config fix\nDependencies updated\nUpdate License",
         "de": "eslint-config fix\nAusgaben aktualisiert\nLizenz aktualisieren",
@@ -80,19 +93,6 @@
         "pl": "Aktualizacja zależności\nPopraw projekt\nTłumaczenie dodane\njsonConfig dodany\ngulp usunięty\nadapter -dev dodany",
         "uk": "Залежність оновлено\nФіксація дизайну\nПереклад додано\njsonConfig додано\nковпачок видалений\nадаптер-dev додано",
         "zh-cn": "更新的依赖关系\n设计\n增加了翻译\n添加了 json 图形\n已删除\n添加适配器- dev"
-      },
-      "1.3.0": {
-        "en": "Dependencies updated\nmany smal Fix\nTranslation added",
-        "de": "Ausgaben aktualisiert\nviele smal Fix\nÜbersetzung hinzugefügt",
-        "ru": "Обновленные данные о зависимостях\nмногие млекопитающие\nДобавлено",
-        "pt": "Dependências atualizadas\nmuitos smal Fix\nTradução adicionada",
-        "nl": "Afhankelijkheden bijgewerkt\nveel smal Fix\nVertaling toegevoegd",
-        "fr": "Dépendances actualisées\nfixe de nombreuses taches\nTraduction ajoutée",
-        "it": "Dipendenze aggiornate\nmolti smal Fix\nTraduzione aggiunto",
-        "es": "Actualización de las dependencias\nmuchos Smal Fix\nTraducción añadido",
-        "pl": "Aktualizacja zależności\nwiele slal Fix\nTłumaczenie dodane",
-        "uk": "Залежність оновлено\nбагато smal Fix\nПереклад додано",
-        "zh-cn": "更新的依赖关系\n许多smal 修补\n增加了翻译"
       }
     },
     "titleLang": {
