@@ -138,7 +138,6 @@
       "license": "MIT",
       "type": "free"
     },
-    "singletonHost": true,
     "readme": "https://github.com/simatec/ioBroker.tinker/blob/master/README.md",
     "icon": "tinker.png",
     "connectionType": "local",
@@ -156,7 +155,7 @@
     ],
     "globalDependencies": [
       {
-        "admin": ">=5.1.0"
+        "admin": ">=7.4.10"
       }
     ],
     "adminUI": {
