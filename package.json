@@ -21,7 +21,7 @@
     "@iobroker/adapter-dev": "^1.4.0",
     "@iobroker/eslint-config": "^1.0.0",
     "@iobroker/testing": "^5.0.3",
-    "chai": "^4.3.10",
+    "chai": "^5.2.0",
     "mocha": "^11.1.0"
   },
   "homepage": "https://github.com/simatec/ioBroker.tinker",
