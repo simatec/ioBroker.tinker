@@ -22,7 +22,7 @@
     "@iobroker/eslint-config": "^2.0.2",
     "@iobroker/testing": "^5.0.4",
     "chai": "^4.3.10",
-    "mocha": "^11.1.0"
+    "mocha": "^11.5.0"
   },
   "homepage": "https://github.com/simatec/ioBroker.tinker",
   "license": "MIT",
