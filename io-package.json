@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.7",
+    "version": "1.3.8",
     "news": {
+      "1.3.8": {
+        "en": "Dependencies updated\nReady for NodeJS 24.x",
+        "de": "Ausgaben aktualisiert\nBereit für NodeJS 24.x",
+        "ru": "Обновленные зависимости\nГотовность к NodeJS 24.x",
+        "pt": "Dependências atualizadas\nPronto para NodeJS 24.x",
+        "nl": "Afhankelijkheden bijgewerkt\nKlaar voor NodeJS 24.x",
+        "fr": "Dépendances actualisées\nPrêt pour NodeJS 24.x",
+        "it": "Dipendenze aggiornate\nPronti per NodeJS 24.x",
+        "es": "Actualización de las dependencias\nListo para NodeJS 24.x",
+        "pl": "Aktualizacja zależności\nGotowy do NodeJS 24.x",
+        "uk": "Залежність оновлено\nГотовий для NodeJS 24.x",
+        "zh-cn": "更新的依赖关系\n准备进入节点JS 24.x"
+      },
       "1.3.7": {
         "en": "Dependencies updated\nsmall Fix",
         "de": "Ausgaben aktualisiert\nkleiner Fix",
@@ -80,19 +93,6 @@
         "pl": "Popraw projekt\nKod źródłowy oczyszczony",
         "uk": "Фіксація дизайну\nКод джерела очищення",
         "zh-cn": "设计\n源代码已清理"
-      },
-      "1.3.1": {
-        "en": "Dependencies updated\nDesign Fix\nTranslation added\njsonConfig added\ngulp deleted\nadapter-dev added",
-        "de": "Ausgaben aktualisiert\nDesign Fix\nÜbersetzung hinzugefügt\njsonConfig hinzugefügt\ngulp gelöscht\nadapter-dev hinzugefügt",
-        "ru": "Обновленные данные о зависимостях\nДизайн Fix\nДобавлено\njsonConfig добавлен\ngulp удален\nадаптер-dev добавлен",
-        "pt": "Dependências atualizadas\nCorreção de Design\nTradução adicionada\njsonConfig adicionado\ngulp excluído\nadaptador-dev adicionado",
-        "nl": "Afhankelijkheden bijgewerkt\nOntwerpfix\nVertaling toegevoegd\njsonConfig toegevoegd\ngulp verwijderd\nadapter-dev toegevoegd",
-        "fr": "Dépendances actualisées\nCorrection de conception\nTraduction ajoutée\njsonConfig ajouté\ngulp supprimé\nadaptateur-dev ajouté",
-        "it": "Dipendenze aggiornate\nDesign Fix\nTraduzione aggiunto\njsonConfig aggiunto\ngulp cancellato\nadattatore-dev aggiunto",
-        "es": "Actualización de las dependencias\nDiseño fijo\nTraducción añadido\njsonConfig añadido\ngulp eliminado\nadaptador-dev añadido",
-        "pl": "Aktualizacja zależności\nPopraw projekt\nTłumaczenie dodane\njsonConfig dodany\ngulp usunięty\nadapter -dev dodany",
-        "uk": "Залежність оновлено\nФіксація дизайну\nПереклад додано\njsonConfig додано\nковпачок видалений\nадаптер-dev додано",
-        "zh-cn": "更新的依赖关系\n设计\n增加了翻译\n添加了 json 图形\n已删除\n添加适配器- dev"
       }
     },
     "titleLang": {
