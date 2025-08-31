@@ -83,7 +83,7 @@ On configuration page you can select following modules:
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
-### __WORK IN PROGRESS__
+### 1.3.9 (2025-08-31)
 * (simatec) Dependencies updated
 
 ### 1.3.8 (2025-06-29)

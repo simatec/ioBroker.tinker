@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.8",
+    "version": "1.3.9",
     "news": {
+      "1.3.9": {
+        "en": "Dependencies updated",
+        "de": "Ausgaben aktualisiert",
+        "ru": "Обновленные зависимости",
+        "pt": "Dependências atualizadas",
+        "nl": "Afhankelijkheden bijgewerkt",
+        "fr": "Dépendances actualisées",
+        "it": "Dipendenze aggiornate",
+        "es": "Actualización de las dependencias",
+        "pl": "Aktualizacja zależności",
+        "uk": "Залежність оновлено",
+        "zh-cn": "更新的依赖关系"
+      },
       "1.3.8": {
         "en": "Dependencies updated\nReady for NodeJS 24.x",
         "de": "Ausgaben aktualisiert\nBereit für NodeJS 24.x",
@@ -80,19 +93,6 @@
         "pl": "Aktualizacja zależności\nAktualizacja doku\ndev- server dodany\nSprawdź ponownie\nPopraw projekt",
         "uk": "Залежність оновлено\nDocu оновлений\nдодано dev-server\nRepo Перевірити виправити\nФіксація дизайну",
         "zh-cn": "更新的依赖关系\n更新 Docu\n添加了 dev 服务器\nRepo 检查修正\n设计"
-      },
-      "1.3.2": {
-        "en": "Design Fix\nSource code cleaned up",
-        "de": "Design Fix\nQuellcode aufgeräumt",
-        "ru": "Дизайн Fix\nКод источника очищен",
-        "pt": "Correção de Design\nCódigo de fonte limpo",
-        "nl": "Ontwerpfix\nBroncode opgeschoond",
-        "fr": "Correction de conception\nCode source nettoyé",
-        "it": "Design Fix\nCodice sorgente ripulito",
-        "es": "Diseño fijo\nCódigo fuente limpiado",
-        "pl": "Popraw projekt\nKod źródłowy oczyszczony",
-        "uk": "Фіксація дизайну\nКод джерела очищення",
-        "zh-cn": "设计\n源代码已清理"
       }
     },
     "titleLang": {
