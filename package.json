@@ -20,9 +20,7 @@
     "@alcalzone/release-script-plugin-manual-review": "^3.7.0",
     "@iobroker/adapter-dev": "^1.4.0",
     "@iobroker/eslint-config": "^2.1.0",
-    "@iobroker/testing": "^5.1.0",
-    "chai": "^4.3.10",
-    "mocha": "^11.7.1"
+    "@iobroker/testing": "^5.1.1"
   },
   "homepage": "https://github.com/simatec/ioBroker.tinker",
   "license": "MIT",
