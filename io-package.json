@@ -122,7 +122,7 @@
       "zh-cn": "ioBroker的叮当监视器"
     },
     "mode": "daemon",
-    "platform": "javascript/Node.js",
+    "platform": "Javascript/Node.js",
     "os": [
       "linux"
     ],
@@ -147,7 +147,6 @@
     "enabled": true,
     "stopBeforeUpdate": true,
     "compact": true,
-    "jsonConfig": true,
     "dependencies": [
       {
         "js-controller": ">=6.0.11"
