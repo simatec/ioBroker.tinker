@@ -83,6 +83,9 @@ On configuration page you can select following modules:
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
+### __WORK IN PROGRESS__
+* (simatec) Fix Test & Release
+
 ### 1.3.10 (2025-11-18)
 * (simatec) dependencies updated
 * (simatec) npm publish update
