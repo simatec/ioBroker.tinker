@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.10",
+    "version": "1.3.11",
     "news": {
+      "1.3.11": {
+        "en": "Fix Test & Release",
+        "de": "Test und Release",
+        "ru": "Скачать Test & Release",
+        "pt": "Corrigir teste e liberação",
+        "nl": "Repareren Test & Release",
+        "fr": "Correction du test et de la libération",
+        "it": "Prova di correzione e rilascio",
+        "es": "Reparación de prueba",
+        "pl": "Napraw test i wydaj",
+        "uk": "Тестування та реліз",
+        "zh-cn": "修复测试和释放"
+      },
       "1.3.10": {
         "en": "dependencies updated\nnpm publish update",
         "de": "aktualisierte abhängigkeiten\nnpm update veröffentlichen",
@@ -80,19 +93,6 @@
         "pl": "Aktualizacja zależności\nNapraw jsonConfig\nDodano działanie\neslint- config dodany",
         "uk": "Залежність оновлено\nВиправлення jsonConfig\nДодана емісія\neslint-config додано",
         "zh-cn": "更新的依赖关系\n修复 Json 连接\n添加的问题行动\n添加埃斯林特配置"
-      },
-      "1.3.4": {
-        "en": "Fix for Admin 7.1.5",
-        "de": "Fix für Admin 7.1.5",
-        "ru": "7.1.5",
-        "pt": "Fix para Admin 7.1.5",
-        "nl": "Fix voor Admin 7.1.5",
-        "fr": "Correction pour Admin 7.1.5",
-        "it": "Fissare per Admin 7.1.5",
-        "es": "Corrección para Admin 7.1.5",
-        "pl": "Naprawiono dla Admin 7.1.5",
-        "uk": "Виправлення для адміністратора 7.1.5",
-        "zh-cn": "7.1.5 管理员的固定"
       }
     },
     "titleLang": {
