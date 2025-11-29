@@ -16,19 +16,6 @@
         "uk": "Тестування та реліз",
         "zh-cn": "修复测试和释放"
       },
-      "1.3.10": {
-        "en": "dependencies updated\nnpm publish update",
-        "de": "aktualisierte abhängigkeiten\nnpm update veröffentlichen",
-        "ru": "обновленные зависимости\nnpm публикует обновления",
-        "pt": "dependências atualizadas\nnpm publicar atualização",
-        "nl": "afhankelijkheden bijgewerkt\nnpm publiceren update",
-        "fr": "dépendances mises à jour\nnpm publier la mise à jour",
-        "it": "dipendenze aggiornate\nnpm pubblicare l'aggiornamento",
-        "es": "dependencias actualizadas\nnpm public update",
-        "pl": "zaktualizowane zależności\nnpm publikuje aktualizację",
-        "uk": "оновлені залежності\nnpm оновлення",
-        "zh-cn": "更新依赖关系\nnpm 发布更新"
-      },
       "1.3.9": {
         "en": "Dependencies updated",
         "de": "Ausgaben aktualisiert",
