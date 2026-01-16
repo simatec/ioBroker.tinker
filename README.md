@@ -83,6 +83,9 @@ On configuration page you can select following modules:
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
+### **WORK IN PROGRESS**
+* (simatec) Fix License
+
 ### 1.3.11 (2025-11-18)
 * (simatec) Fix Test & Release
 
@@ -171,7 +174,7 @@ On configuration page you can select following modules:
 
 The MIT License (MIT)
 
-Copyright (c) 2018-2025 simatec
+Copyright (c) 2018-2026 simatec
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
