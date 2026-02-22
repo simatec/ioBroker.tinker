@@ -85,6 +85,7 @@ On configuration page you can select following modules:
 <!-- ### __WORK IN PROGRESS__ -->
 ### **WORK IN PROGRESS**
 * (simatec) Fix License
+* (simatec) Dependencies updated
 
 ### 1.3.11 (2025-11-18)
 * (simatec) Fix Test & Release
