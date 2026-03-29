@@ -10,7 +10,7 @@
 'use strict';
 
 const utils = require('@iobroker/adapter-core'); // Get common adapter utils
-const exec = require('child_process').execSync;
+const exec = require('node:child_process').execSync;
 const adapterName = require('./package.json').name.split('.').pop();
 
 let adapter;
