@@ -174,6 +174,8 @@ On configuration page you can select following modules:
 ### 0.0.1 (2018-07-03)
 * initial Version
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 
 The MIT License (MIT)
