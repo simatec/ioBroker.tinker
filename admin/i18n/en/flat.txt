@@ -1,9 +1,0 @@
-CPU
-Memory
-Network
-Swap
-Tinker Board-Monitor Adapter settings
-Temperature
-Uptime
-WLAN
-SD Card

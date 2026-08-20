@@ -83,11 +83,11 @@ On configuration page you can select following modules:
 
 ## Changelog
 <!-- ### __WORK IN PROGRESS__ -->
-### **WORK IN PROGRESS**
-- (copilot) Adapter requires node.js >= 22 now
 
 ### __WORK IN PROGRESS__
 * (simatec) Dependencies updated
+* (copilot) Adapter requires node.js >= 22 now
+* (simatec) Source Code Cleaned Up
 
 ### 1.3.12 (2026-02-22)
 * (simatec) Fix License

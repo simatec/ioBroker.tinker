@@ -1,9 +1,0 @@
-UPC
-Memoria
-Red
-Intercambiar
-ConfiguraciÃ³n del adaptador Tinker Board Monitor
-Temperatura
-Tiempo de actividad
-WLAN
-Tarjeta SD

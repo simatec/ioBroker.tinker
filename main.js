@@ -79,7 +79,7 @@ function startAdapter(options) {
 
 function main(adapter) {
     // TODO: Check which Objects we provide
-    timer = setInterval(parser, adapter.config.interval || 60000);
+    timer = adapter.setInterval(parser, adapter.config.interval || 60000);
     parser();
 }
 
