@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "tinker",
-    "version": "1.3.12",
+    "version": "1.4.0",
     "news": {
+      "1.4.0": {
+        "en": "Dependencies updated\nAdapter requires node.js >= 22 now\nSource Code Cleaned Up",
+        "de": "Abhängigkeiten aktualisiert\nDer Adapter benötigt jetzt Node.js >= 22.\nQuellcode bereinigt",
+        "ru": "Зависимости обновлены.\nДля работы адаптера требуется Node.js версии >= 22.\nИсходный код очищен.",
+        "pt": "Dependências atualizadas\nO adaptador agora requer Node.js >= 22.\nCódigo-fonte limpo",
+        "nl": "Afhankelijkheden bijgewerkt\nDe adapter vereist nu Node.js versie 22 of hoger.\nBroncode opgeschoond",
+        "fr": "Dépendances mises à jour\nL'adaptateur nécessite désormais Node.js >= 22.\nCode source nettoyé",
+        "it": "Dipendenze aggiornate\nL'adattatore ora richiede Node.js >= 22\nCodice sorgente ripulito",
+        "es": "Dependencias actualizadas\nEl adaptador ahora requiere node.js >= 22.\nCódigo fuente depurado",
+        "pl": "Zaktualizowano zależności\nAdapter wymaga teraz node.js >= 22\nKod źródłowy oczyszczony",
+        "uk": "Залежності оновлено\nАдаптер тепер вимагає node.js >= 22\nВихідний код очищено",
+        "zh-cn": "依赖项已更新\n适配器现在需要 node.js 版本 >= 22。\n源代码已清理"
+      },
       "1.3.12": {
         "en": "Fix License\nDependencies updated",
         "de": "Lizenz für das Festlegen\nAusgaben aktualisiert",
@@ -80,19 +93,6 @@
         "pl": "fix eslint- config\nAktualizacja zależności\nUaktualnij licencję",
         "uk": "eslint-config виправити\nЗалежність оновлено\nОновлення ліцензії",
         "zh-cn": "埃斯林特配置修复\n更新的依赖关系\n更新许可证"
-      },
-      "1.3.5": {
-        "en": "Dependencies updated\nFix jsonConfig\nIssue Action added\neslint-config added",
-        "de": "Ausgaben aktualisiert\nFehlerbehebung jsonConfig\nAusgabe Aktion hinzugefügt\neslint-config hinzugefügt",
-        "ru": "Обновленные данные о зависимостях\nFix jsonConfig\nДополнительные меры\nдобавлена eslint-config",
-        "pt": "Dependências atualizadas\nFixar jsonConfig\nAção de problemas adicionada\neslint-config adicionado",
-        "nl": "Afhankelijkheden bijgewerkt\nFix jsonConfig\nOnderwerpactie toegevoegd\neslint-config toegevoegd",
-        "fr": "Dépendances actualisées\nCorrection de jsonConfig\nMesure à prendre\neslint-config ajouté",
-        "it": "Dipendenze aggiornate\nFissare jsonConfig\nAzione di problema aggiunto\neslint-config aggiunto",
-        "es": "Actualización de las dependencias\nCorrección jsonConfig\nTema Acción añadido\neslint-config añadido",
-        "pl": "Aktualizacja zależności\nNapraw jsonConfig\nDodano działanie\neslint- config dodany",
-        "uk": "Залежність оновлено\nВиправлення jsonConfig\nДодана емісія\neslint-config додано",
-        "zh-cn": "更新的依赖关系\n修复 Json 连接\n添加的问题行动\n添加埃斯林特配置"
       }
     },
     "titleLang": {
