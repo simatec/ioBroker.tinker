@@ -3,7 +3,7 @@
   "description": "Tinker Board-Monitor for ioBroker Installations",
   "version": "1.3.12",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "author": {
     "name": "simatec",
